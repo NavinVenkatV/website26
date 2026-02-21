@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { Data } from "../data/about"
 import { AiOutlineRise } from "react-icons/ai";
 
@@ -7,21 +8,26 @@ interface details {
     name : string, 
     year : string, 
     bio : string, 
-    skills ?: String
+    skills ?: String,
+    link : string
 }
 
-export function Experience ({name, year, bio, skills} : details) {
+
+export function Experience ({name, year, bio, skills, link} : details) {
+    console.log(name)
     return (
-        <div>
+        <div className="mb-10">
             <div className="flex">
                 <p className="mr-2 flex justify-center">{name}</p>
-                <p className="flex justify-center items-center hover:scale-125"><AiOutlineRise/></p>
+                <a className="flex justify-center items-center hover:scale-125" 
+                href={link}
+                ><AiOutlineRise/></a>
             </div>
-            <p>year</p>
-            <div>
+            <p className="text-sm mask-t-from-neutral-50">{year}</p>
+            <div className="mt-2">
                 {bio}
             </div>
-            <div>
+            <div className="mt-2">
                 {skills}
             </div>
         </div>
