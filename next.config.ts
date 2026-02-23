@@ -5,3 +5,9 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+export interface details {
+    github: string
+    x: string
+    linkedin: string
+    email: string
+}

@@ -3,6 +3,8 @@ import { Data } from "./data/about";
 import { Skill } from "./component/skills";
 import { Experience } from "./component/experience";
 import { Projects } from "./component/projects";
+import { Education } from "./component/education";
+import { Footer } from "./component/footer";
 
 export default function Home() {
   return (
@@ -45,11 +47,41 @@ export default function Home() {
           <div className="mt-10">
             <h1 className="font-bold text-2xl">Projects I Developed..</h1>
             <p className="mb-5">What I’ve Built</p>
-            <Projects
-            name={Data.projects.name1}
-            bio={Data.projects.bio1}
-            image={Data.projects.image1}
+            <div className="flex justify-center">
+              <div className="flex flex-wrap gap-3">
+                <Projects
+                  name={Data.projects.name1}
+                  bio={Data.projects.bio1}
+                  image={Data.projects.image1}
+                  stacks="stack1"
+                />
+
+                <Projects
+                  name={Data.projects.name2}
+                  bio={Data.projects.bio2}
+                  image={Data.projects.image2}
+                  stacks="stack2"
+                />
+
+                <Projects
+                  name={Data.projects.name3}
+                  bio={Data.projects.bio3}
+                  image={Data.projects.image3}
+                  stacks="stack3"
+                />
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-10">
+            <h1 className="font-bold text-2xl">Education</h1>
+            <Education
             />
+          </div>
+
+          <div className="w-full text-center flex justify-center mt-20">
+            <Footer />
           </div>
 
         </section>
@@ -58,3 +90,4 @@ export default function Home() {
     </div>
   );
 }
+
