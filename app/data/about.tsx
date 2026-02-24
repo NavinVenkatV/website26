@@ -55,6 +55,9 @@ export const Data = {
     },
 
     projects: {
+        link1 : "https://exaai.vercel.app",
+        link2 : 'https://dm2-buy.vercel.app/',
+        link3 : "https://pingmeyourwebsite.vercel.app/",
         name1: "CodeIt: Real-Time Code Collaboration Platform",
         image1: "codeit.png",
         image2: "exaai.png",

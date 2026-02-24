@@ -52,21 +52,21 @@ export default function Home() {
                 <Projects
                   name={Data.projects.name1}
                   bio={Data.projects.bio1}
-                  image={Data.projects.image1}
                   stacks="stack1"
+                  link={Data.projects.link1}
                 />
 
                 <Projects
                   name={Data.projects.name2}
                   bio={Data.projects.bio2}
-                  image={Data.projects.image2}
+                  link={Data.projects.link2}
                   stacks="stack2"
                 />
 
                 <Projects
                   name={Data.projects.name3}
                   bio={Data.projects.bio3}
-                  image={Data.projects.image3}
+                  link={Data.projects.link3}
                   stacks="stack3"
                 />
               </div>

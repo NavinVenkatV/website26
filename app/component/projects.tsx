@@ -2,17 +2,17 @@ import Image from "next/image"
 import { Data } from "../data/about"
 
 interface details {
-    image: string,
+    link : string,
     name: string,
     bio: string,
     stacks: keyof typeof Data.techStacks
 }
 
-export function Projects({ image, name, bio, stacks }: details) {
+export function Projects({ link, name, bio, stacks }: details) {
     const techList = Data.techStacks[stacks] || [];
     return (
         <div className="mb-10 border-1 border-neutral-600 rounded-2xl border-whiten w-[350] h-auto px-3 py-2 ">
-            <p className="">{name}</p>
+            <a className="cursor-pointer " href={link}>{name}</a>
             {/* <Image
                 className="w-full h-full mt-3 rounded-xl"
                 src={`/${image}`}

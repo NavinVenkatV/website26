@@ -29,7 +29,7 @@ export function Header({ name, bio, photo, email }: details) {
                 </div>
                 <img
                     className="rounded-full w-[100] h-[100]"
-                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXZ0dWI1c2FienQxcHJrdW93YWc2NTNsazQ5d3NlbHpvMDg1YTJmdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3FjEPbKqEPhPpmC8uY/giphy.gif" alt="Hey" />        </div>
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWUycG41bGR4NXkxNDNyNDkzaWF1MHdocTN6ODFwY2VrODdhbWlnZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/brCNdnOeZSkZNofIFB/giphy.gif" alt="Hey" />        </div>
             <div className="mt-3">
                 {bio.split('\n').map((line, index) => (
                     <div key={index} className="mt-5">
