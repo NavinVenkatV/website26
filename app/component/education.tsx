@@ -10,14 +10,14 @@ export function Education() {
         <div className="mt-4">
             <div className="flex gap-4">
                 <Image
-                    className="rounded-full flex flex-col justify-center items-center"
+                    className="rounded-full flex flex-col justify-center items-center w-[70] h-[50]"
                     src={'/Epita.png'}
                     width={50}
                     height={50}
                     alt="logo"
                 >
                 </Image>
-                <div className="flex justify-between w-full">
+                <div className="md:flex md:justify-between w-full text-xs md:text-lg">
                     <div>
                         <p className="font-bold flex justify-center items-center">EPITA, l'école des ingénieurs en intelligence informatique</p>
                         <p className="text-sm ">Master of Science in Computer Science</p>

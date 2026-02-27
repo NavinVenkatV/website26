@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Data } from "../data/about"
 
 interface details {
@@ -8,11 +7,16 @@ interface details {
     stacks: keyof typeof Data.techStacks
 }
 
+const BLUR_FADE_DELAY = 0.4;
+
 export function Projects({ link, name, bio, stacks }: details) {
     const techList = Data.techStacks[stacks] || [];
     return (
-        <div className="mb-10 border-1 border-neutral-600 rounded-2xl border-whiten w-[350] h-auto px-3 py-2 ">
-            <a className="cursor-pointer " href={link}>{name}</a>
+        <div className="mb-10 border-1 border-neutral-600 rounded-2xl border-whiten w-auto md:w-[350] h-auto px-3 py-2 ">
+            <a className="cursor-pointer " href={link} target="_blank">{name} 
+                <span className="text-sm font-extralight text-amber-600 px-4 cursor-pointer hover:underline">link</span>
+            </a>
+            
             {/* <Image
                 className="w-full h-full mt-3 rounded-xl"
                 src={`/${image}`}

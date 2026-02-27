@@ -8,8 +8,8 @@ import { Footer } from "./component/footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center h-full  text-shadow-mist-300 m-24">
-      <div className="flex  max-w-[800] bg-neutral-900 h-auto rounded-xl p-4">
+    <div className="flex flex-col justify-center items-center  h-full  text-shadow-mist-300 m-2 md:m-24 overflow-hidden">
+      <div className="w-full max-w-4xl rounded-xl p-3 md:p-12">
         <section id="header" className="">
           <Header
             name="Navin Venkat V "
@@ -74,8 +74,22 @@ export default function Home() {
 
           </div>
 
-          <div className="mt-10">
-            <h1 className="font-bold text-2xl">Education</h1>
+          <div>
+            <div className="text-2xl text-green-500 my-4">Wanna hear some music..</div>
+            <iframe
+            title="Spotify Embed: Recommendation Playlist "
+            src={`https://open.spotify.com/embed/playlist/50Mq1NFF7fGYQ8oXNLrlbb?utm_source=generator&theme=0`}
+            width="100%"
+            height="100%"
+            style={{ minHeight: '360px' }}
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          />
+          </div>
+
+          <div className="mt-16">
+            <h1 className="font-bold  text-2xl">Education</h1>
             <Education
             />
           </div>
@@ -83,6 +97,8 @@ export default function Home() {
           <div className="w-full text-center flex justify-center mt-20">
             <Footer />
           </div>
+
+          
 
         </section>
 
