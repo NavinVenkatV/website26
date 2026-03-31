@@ -1,4 +1,5 @@
-import { Data } from "../data/about"
+import { Data } from "../data/about";
+import { useTranslations } from 'next-intl';
 
 interface details {
     link : string,
@@ -10,11 +11,12 @@ interface details {
 const BLUR_FADE_DELAY = 0.4;
 
 export function Projects({ link, name, bio, stacks }: details) {
+    const t = useTranslations('Projects');
     const techList = Data.techStacks[stacks] || [];
     return (
         <div className="mb-10 border-1 border-neutral-600 rounded-2xl border-whiten w-auto md:w-[350] h-auto px-3 py-2 ">
             <a className="cursor-pointer " href={link} target="_blank">{name} 
-                <span className="text-sm font-extralight text-amber-600 px-4 cursor-pointer hover:underline">link</span>
+                <span className="text-sm font-extralight text-amber-600 px-4 cursor-pointer hover:underline">{t('linkText')}</span>
             </a>
             
             {/* <Image

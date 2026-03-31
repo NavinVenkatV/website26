@@ -1,0 +1,37 @@
+{
+  "Index": {
+    "skills": "Skills",
+    "career": "Career",
+    "careerSubtitle": "Work experiences and roles",
+    "projects": "Projects I Developed..",
+    "projectsSubtitle": "What I’ve Built",
+    "music": "Wanna hear some music..",
+    "education": "Education"
+  },
+  "Header": {
+    "greeting": "Hi! I'm {name}",
+    "bio": "I like being the person who turns ideas into real products.\n\nStarted my journey tinkering with code and Web3 by curiosity, but I quickly got hooked on building full-stack applications, exploring Solana smart contracts, and experimenting with AI/ML models. Also, I have a soft spot for clean, modern aesthetics in digital experiences.\n\nAlong the way, I dabbled in frontend design, backend engineering, and even a bit of cloud infrastructure. Now I do a mix of everything from creating decentralized apps to prototyping AI-driven tools."
+  },
+  "Career": {
+    "agileSoftLabs": "AgileSoftLabs",
+    "freelancer": "Freelancer",
+    "agileYear": "Jan 2025 – Apr 2025",
+    "freeYear": "2024 – Present",
+    "agileBio": "Built scalable APIs and user interfaces using React.js and Next.js for enterprise clients. I integrated MongoDB for persistent storage and Firebase for real-time updates, while optimizing application performance by modularizing large codebases.",
+    "freeBio": "As a freelance web developer, I design and deploy client websites and SaaS applications using the MERN stack with Dockerized CI/CD workflows. My work includes implementing authentication, payment gateways, and performance dashboards, with a focus on responsive UI/UX and reusable components."
+  },
+  "Projects": {
+    "codeItName": "CodeIt: Real-Time Code Collaboration Platform",
+    "codeItBio": "Real-time multi-user code editor with live sync, cursor tracking, secure rooms, and syntax highlighting—built for remote pair programming and team coding.",
+    "exaName": "Exa: AI-Powered Search Engine",
+    "exaBio": "AI-powered search tool integrated with Exa API and LLMs for concise, semantic results beyond keywords—with secure auth, fast SSR performance, and Vercel deployment. Ideal for privacy-focused natural language search.",
+    "pingMeName": "PingMe: Uptime Monitoring SaaS Tool",
+    "pingMeBio": "Subscription-based website monitoring service with real-time pings, downtime email alerts, performance metrics dashboards, user auth, and tiered plans—built for reliable uptime tracking and instant notifications.",
+    "linkText": "link"
+  },
+  "Education": {
+    "school": "EPITA, l'école des ingénieurs en intelligence informatique",
+    "degree": "Master of Science in Computer Science",
+    "year": "2025-26"
+  }
+}

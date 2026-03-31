@@ -1,12 +1,17 @@
-import { Header } from "./component/header";
-import { Data } from "./data/about";
-import { Skill } from "./component/skills";
-import { Experience } from "./component/experience";
-import { Projects } from "./component/projects";
-import { Education } from "./component/education";
-import { Footer } from "./component/footer";
+import { Header } from "../component/header";
+import { Data } from "../data/about";
+import { Skill } from "../component/skills";
+import { Experience } from "../component/experience";
+import { Projects } from "../component/projects";
+import { Education } from "../component/education";
+import { Footer } from "../component/footer";
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Index');
+  const th = useTranslations('Header');
+  const tc = useTranslations('Career');
+  const tp = useTranslations('Projects');
   return (
     <div className="flex flex-col justify-center items-center  h-full  text-shadow-mist-300 m-2 md:m-24 overflow-hidden">
       <div className="w-full max-w-4xl rounded-xl p-3 md:p-12">
@@ -14,58 +19,53 @@ export default function Home() {
           <Header
             name="Navin Venkat V "
             photo="photo"
-            bio={`I like being the person who turns ideas into real products.
-
-                  Started my journey tinkering with code and Web3 by curiosity, but I quickly got hooked on building full-stack applications, exploring Solana smart contracts, and experimenting with AI/ML models. Also, I have a soft spot for clean, modern aesthetics in digital experiences.
-
-                  Along the way, I dabbled in frontend design, backend engineering, and even a bit of cloud infrastructure. Now I do a mix of everything from creating decentralized apps to prototyping AI-driven tools.
-                `}
+            bio={th('bio')}
             email="vnavinvenkat@gmail.com"
           />
           <div className="mt-10">
-            <h1 className="font-bold text-2xl">Skills</h1>
+            <h1 className="font-bold text-2xl">{t('skills')}</h1>
             <Skill />.......
           </div>
 
           <div className="mt-10">
-            <h1 className="font-bold text-2xl">Career</h1>
-            <p className="mb-5">Work experiences and roles</p>
+            <h1 className="font-bold text-2xl">{t('career')}</h1>
+            <p className="mb-5">{t('careerSubtitle')}</p>
             <Experience
-              name={Data.career.company1}
-              year={Data.career.year1}
-              bio={Data.career.bio1}
+              name={tc('agileSoftLabs')}
+              year={tc('agileYear')}
+              bio={tc('agileBio')}
               link={Data.career.link1}
             />
             <Experience
-              name={Data.career.company2}
-              year={Data.career.year2}
-              bio={Data.career.bio2}
-              link={Data.career.link1}
+              name={tc('freelancer')}
+              year={tc('freeYear')}
+              bio={tc('freeBio')}
+              link={Data.career.link2}
             />
           </div>
 
           <div className="mt-10">
-            <h1 className="font-bold text-2xl">Projects I Developed..</h1>
-            <p className="mb-5">What I’ve Built</p>
+            <h1 className="font-bold text-2xl">{t('projects')}</h1>
+            <p className="mb-5">{t('projectsSubtitle')}</p>
             <div className="flex justify-center">
               <div className="flex flex-wrap gap-3">
                 <Projects
-                  name={Data.projects.name1}
-                  bio={Data.projects.bio1}
+                  name={tp('codeItName')}
+                  bio={tp('codeItBio')}
                   stacks="stack1"
                   link={Data.projects.link1}
                 />
 
                 <Projects
-                  name={Data.projects.name2}
-                  bio={Data.projects.bio2}
+                  name={tp('exaName')}
+                  bio={tp('exaBio')}
                   link={Data.projects.link2}
                   stacks="stack2"
                 />
 
                 <Projects
-                  name={Data.projects.name3}
-                  bio={Data.projects.bio3}
+                  name={tp('pingMeName')}
+                  bio={tp('pingMeBio')}
                   link={Data.projects.link3}
                   stacks="stack3"
                 />
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="text-2xl text-green-500 my-4">Wanna hear some music..</div>
+            <div className="text-2xl text-green-500 my-4">{t('music')}</div>
             <iframe
             title="Spotify Embed: Recommendation Playlist "
             src={`https://open.spotify.com/embed/playlist/50Mq1NFF7fGYQ8oXNLrlbb?utm_source=generator&theme=0`}
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16">
-            <h1 className="font-bold  text-2xl">Education</h1>
+            <h1 className="font-bold  text-2xl">{t('education')}</h1>
             <Education
             />
           </div>

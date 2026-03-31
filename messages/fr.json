@@ -1,0 +1,37 @@
+{
+  "Index": {
+    "skills": "Compétences",
+    "career": "Carrière",
+    "careerSubtitle": "Expériences professionnelles et rôles",
+    "projects": "Projets que j'ai développés..",
+    "projectsSubtitle": "Ce que j'ai construit",
+    "music": "Envie d'écouter de la musique..",
+    "education": "Éducation"
+  },
+  "Header": {
+    "greeting": "Salut ! Je suis {name}",
+    "bio": "J'aime être la personne qui transforme des idées en produits réels.\n\nJ'ai commencé mon parcours par curiosité en bricolant avec du code et le Web3, mais je suis vite devenu accro à la création d'applications full-stack, à l'exploration des contrats intelligents Solana et à l'expérimentation de modèles IA/ML. J'ai aussi un faible pour une esthétique épurée et moderne dans les expériences numériques.\n\nEn cours de route, j'ai touché au design frontend, à l'ingénierie backend, et même un peu à l'infrastructure cloud. Aujourd'hui, je fais un peu de tout, de la création d'applications décentralisées au prototypage d'outils basés sur l'IA."
+  },
+  "Career": {
+    "agileSoftLabs": "AgileSoftLabs",
+    "freelancer": "Freelance",
+    "agileYear": "Janv 2025 – Avr 2025",
+    "freeYear": "2024 – Présent",
+    "agileBio": "J'ai développé des API et des interfaces utilisateur évolutives avec React.js et Next.js pour des entreprises clientes. J'ai intégré MongoDB pour le stockage persistant et Firebase pour les mises à jour en temps réel, tout en optimisant les performances des applications en modularisant de vastes bases de code.",
+    "freeBio": "En tant que développeur web freelance, je conçois et déploie des sites web et des applications SaaS en utilisant la pile MERN avec des flux de travail CI/CD conteneurisés (Docker). Mon travail inclut l'implémentation de l'authentification, des passerelles de paiement et des tableaux de bord de performance, en me concentrant sur une UI/UX réactive et des composants réutilisables."
+  },
+  "Projects": {
+    "codeItName": "CodeIt : Plateforme de collaboration de code en temps réel",
+    "codeItBio": "Éditeur de code multi-utilisateurs en temps réel avec synchronisation en direct, suivi des curseurs, salles sécurisées et coloration syntaxique—conçu pour la programmation en binôme à distance et le codage en équipe.",
+    "exaName": "Exa : Moteur de recherche assisté par l'IA",
+    "exaBio": "Outil de recherche dopé à l'IA intégrant l'API Exa et des LLM pour des résultats concis et sémantiques au-delà des simples mots-clés—avec authentification sécurisée, performances SSR rapides et déploiement Vercel. Idéal pour une recherche en langage naturel axée sur la confidentialité.",
+    "pingMeName": "PingMe : Outil SaaS de surveillance de la disponibilité",
+    "pingMeBio": "Service de surveillance de sites web par abonnement offrant des pings en temps réel, des alertes par e-mail en cas d'indisponibilité, des tableaux de bord de performances, une authentification utilisateur et des forfaits hiérarchisés—conçu pour un suivi fiable de la disponibilité et des notifications instantanées.",
+    "linkText": "lien"
+  },
+  "Education": {
+    "school": "EPITA, l'école des ingénieurs en intelligence informatique",
+    "degree": "Master of Science en Informatique",
+    "year": "2025-26"
+  }
+}

@@ -1,5 +1,7 @@
 "use client"
 
+import { useTranslations } from 'next-intl';
+
 import { useState } from "react"
 import { MdOutlineContentCopy } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
@@ -21,11 +23,12 @@ export function Header({ name, bio, photo, email }: details) {
         }, 2000)
     }
     const [click, setClick] = useState(false);
+    const t = useTranslations('Header');
     return (
         <div className="">
             <div className="flex justify-between">
                 <div className="text-xl md:text-4xl font-bold flex flex-col justify-center items-center ">
-                    Hi! I'm {name}
+                    {t('greeting', { name })}
                 </div>
                 <img
                     className="rounded-full w-[100] h-[100]"

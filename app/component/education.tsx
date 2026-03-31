@@ -1,4 +1,5 @@
-import Image from "next/image"
+import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 // interface details {
 //     name: string,
@@ -6,6 +7,7 @@ import Image from "next/image"
 // }
 
 export function Education() {
+    const t = useTranslations('Education');
     return (
         <div className="mt-4">
             <div className="flex gap-4">
@@ -19,10 +21,10 @@ export function Education() {
                 </Image>
                 <div className="md:flex md:justify-between w-full text-xs md:text-lg">
                     <div>
-                        <p className="font-bold flex justify-center items-center">EPITA, l'école des ingénieurs en intelligence informatique</p>
-                        <p className="text-sm ">Master of Science in Computer Science</p>
+                        <p className="font-bold flex justify-center items-center">{t('school')}</p>
+                        <p className="text-sm ">{t('degree')}</p>
                     </div>
-                    <div className="text-neutral-500">2025-26</div>
+                    <div className="text-neutral-500">{t('year')}</div>
                 </div>
             </div>
             <div></div>
