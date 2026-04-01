@@ -21,8 +21,8 @@ export function Education() {
                 </Image>
                 <div className="md:flex md:justify-between w-full text-xs md:text-lg">
                     <div>
-                        <p className="font-bold flex justify-center items-center">{t('school')}</p>
-                        <p className="text-sm ">{t('degree')}</p>
+                        <p className="font-bold text-white flex justify-center items-center">{t('school')}</p>
+                        <p className="">{t('degree')}</p>
                     </div>
                     <div className="text-neutral-500">{t('year')}</div>
                 </div>

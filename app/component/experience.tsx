@@ -24,7 +24,7 @@ export function Experience ({name, year, bio, skills, link} : details) {
                 ><AiOutlineRise/></a>
             </div>
             <p className="text-sm mask-t-from-neutral-50">{year}</p>
-            <div className="mt-2 text-xs md:text-lg">
+            <div className="mt-2 text-sm md:text-lg">
                 {bio}
             </div>
             <div className="mt-2">

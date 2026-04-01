@@ -13,11 +13,11 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="cursor-pointer">
       <select
         value={locale}
         onChange={(e) => switchLocale(e.target.value)}
-        className="bg-gray-800 text-white rounded px-2 py-1 border border-gray-600 outline-none"
+        className="text-white outline-none"
       >
         <option value="en">🇺🇸 EN</option>
         <option value="fr">🇫🇷 FR</option>

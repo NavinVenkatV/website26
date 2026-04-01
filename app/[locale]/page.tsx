@@ -8,16 +8,18 @@ import { Footer } from "../component/footer";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
+
+
   const t = useTranslations('Index');
   const th = useTranslations('Header');
   const tc = useTranslations('Career');
   const tp = useTranslations('Projects');
   return (
-    <div className="flex flex-col justify-center items-center  h-full  text-shadow-mist-300 m-2 md:m-24 overflow-hidden">
+    <div className="flex flex-col mt-20 justify-center items-center text-neutral-400  h-full  text-shadow-mist-300 m-2 md:m-24 overflow-hidden">
       <div className="w-full max-w-4xl rounded-xl p-3 md:p-12">
         <section id="header" className="">
           <Header
-            name="Navin Venkat V "
+            name="Navin Venkat"
             photo="photo"
             bio={th('bio')}
             email="vnavinvenkat@gmail.com"
@@ -75,7 +77,7 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="text-2xl text-green-500 my-4">{t('music')}</div>
+            <div className="md:text-2xl text-green-500 my-4">{t('music')}</div>
             <iframe
             title="Spotify Embed: Recommendation Playlist "
             src={`https://open.spotify.com/embed/playlist/50Mq1NFF7fGYQ8oXNLrlbb?utm_source=generator&theme=0`}
