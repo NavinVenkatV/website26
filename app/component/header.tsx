@@ -6,8 +6,10 @@ import { useState } from "react"
 import { MdOutlineContentCopy } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import { Data } from "../data/about";
-import { motion } from "motion/react"
+import { motion, cubicBezier } from "motion/react"
 
+
+const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 
 interface details {
     name: string,
@@ -36,7 +38,7 @@ const fadeInUp = {
         filter: "blur(0px)",
         transition: {
             duration: 0.6,
-            ease: "easeInOut",
+            ease: easeC,
         },
     },
 };

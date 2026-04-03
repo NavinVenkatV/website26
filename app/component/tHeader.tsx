@@ -2,10 +2,10 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export function Theader() {
     return (
-        <div className="fixed top-0 left-0 right-0 p-2 m-3 rounded-2xl 
+        <div className="fixed z-20 top-0 left-0 right-0 p-2 m-3 rounded-2xl 
                         bg-neutral-900/75 backdrop-blur-xl 
                         border border-neutral-400/20 
-                        shadow-2xl shadow-black/60">
+                        shadow-2xl shadow-black/60 ">
             
             <div className="flex justify-between items-center">
                 <img 
