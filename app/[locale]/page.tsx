@@ -69,7 +69,6 @@ export default function Home() {
           variants={staggerContainer}
           className="mt-16"
         >
-          @ts
           <motion.h1 variants={fadeInUp} className="font-bold text-3xl mb-8 text-white">
             {t('skills')}
           </motion.h1>

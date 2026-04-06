@@ -42,7 +42,7 @@ const fadeInUp = {
         },
     },
 };
-
+let dateNow = new Date().toLocaleTimeString("en-GB", { hour12: false });
 export function Header({ name, bio, photo, email }: details) {
     function copy() {
         setClick(true)
@@ -52,6 +52,13 @@ export function Header({ name, bio, photo, email }: details) {
         }, 2000)
     }
     const [click, setClick] = useState(false);
+    const [clock, setClock] = useState('');
+
+    setInterval(() => {
+        dateNow = new Date().toLocaleTimeString("en-GB", { hour12: false });
+        setClock(dateNow)
+    },1000)
+
     const t = useTranslations('Header');
     return (
         <motion.div
@@ -63,6 +70,9 @@ export function Header({ name, bio, photo, email }: details) {
                 <motion.div variants={fadeInUp}
                     className="text-2xl md:text-4xl font-bold flex flex-col  ">
                     <span className='text-white'>{t('greeting', { name })}</span>
+                    <span className='text-xs text-green-900 font-bold'>Paris, France 
+                    <p className=' text-green-900 font-bold'>{clock.toString()}</p>
+                    </span>
                 </motion.div>
 
                 {/* <img
