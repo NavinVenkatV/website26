@@ -13,6 +13,11 @@ import { useTranslations } from 'next-intl';
 import { motion, cubicBezier } from 'motion/react';
 
 // Animation Variants
+function summa () {
+  const a : number  = 23;
+  console.log(a)
+}
+summa();
 const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 const fadeInUp = {
   hidden: {

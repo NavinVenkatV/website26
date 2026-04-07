@@ -52,7 +52,7 @@ export function Header({ name, bio, photo, email }: details) {
         }, 2000)
     }
     const [click, setClick] = useState(false);
-    const [clock, setClock] = useState('');
+    const [clock, setClock] = useState(dateNow);
 
     setInterval(() => {
         dateNow = new Date().toLocaleTimeString("en-GB", { hour12: false });
