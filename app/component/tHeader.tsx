@@ -10,7 +10,7 @@ export function Theader() {
             <div className="flex justify-between items-center">
                 <img 
                     className="rounded-full w-12 h-12 object-cover ring-1 ring-neutral-400/30" 
-                    src="https://m.media-amazon.com/images/I/615pLxcn6lL._AC_UY1100_.jpg" 
+                    src="https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622024.jpg" 
                     alt="Nav" 
                 />
                 
