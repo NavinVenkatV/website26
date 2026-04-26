@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto_Slab, Dancing_Script, Cinzel, Roboto } from "next/font/google";
 import "../globals.css";
 import { Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
@@ -10,6 +10,27 @@ import { Theader } from "../component/tHeader";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
+const robotoSlab = Roboto_Slab({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
 });
 
 const spaceGrotesk = Space_Grotesk({

@@ -7,7 +7,13 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import { Data } from "../data/about";
 import { motion, cubicBezier } from "motion/react"
+import { Dancing_Script } from 'next/font/google';
 
+const dancingScript = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
 
 const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 
@@ -69,7 +75,7 @@ export function Header({ name, bio, photo, email }: details) {
             <div className="flex justify-between">
                 <motion.div variants={fadeInUp}
                     className="text-2xl md:text-4xl font-bold flex flex-col  ">
-                    <span className='text-white'>{t('greeting', { name })}</span>
+                    <span style={{ fontFamily: dancingScript.style.fontFamily }} className='text-white'>{t('greeting', { name })}</span>
                     <span className='text-xs text-green-900 font-bold'>Paris, France 
                     <p className=' text-green-900 font-bold'>{clock.toString()}</p>
                     </span>
