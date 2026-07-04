@@ -66,6 +66,7 @@ export default function ScrollHero() {
         >
           Hi! I'm nav'
           <p className="text-2xl">AI/Ml | Full Stack | Music</p>
+          <p className="text-sm">Website build in progress...</p>
         </motion.h1>
       </div>
     </div>
