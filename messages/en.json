@@ -10,7 +10,7 @@
   },
   "Header": {
     "greeting": "Hi! I'm {name}",
-    "bio": "I like being the person who turns ideas into real products.\n\nStarted my journey tinkering with code and Web3 by curiosity, but I quickly got hooked on building full-stack applications, exploring Solana smart contracts, and experimenting with AI/ML models. Also, I have a soft spot for clean, modern aesthetics in digital experiences.\n\nAlong the way, I dabbled in frontend design, backend engineering, and even a bit of cloud infrastructure. Now I do a mix of everything from creating decentralized apps to prototyping AI-driven tools."
+    "bio": "I build intelligent systems using machine learning and deep learning.\n\nThree years ago, I was purely a full-stack developer—React, Node, MongoDB. I built great products, but realized the most impactful software isn't just fast or beautiful; it's intelligent.\n\nSo I made a decision: dive deep into ML.\n\nFor the past 6 months, I've been on an intense learning journey. I trained CNNs for image classification, fine-tuned transformers for NLP, and deployed models to production. But I didn't just watch tutorials—I built end-to-end systems from data loading to deployment.\n\nNow I'm at the intersection of full-stack engineering and machine learning. I understand how to build systems that scale AND how to train models that actually work.\n\nMy goal: Become a world-class ML engineer solving real problems.\n\nGitHub is where you'll find my work—complete projects, not random scripts. Every project includes clean code, documentation, and a live demo.\n\nLet's build something intelligent together."
   },
   "Career": {
     "agileSoftLabs": "AgileSoftLabs",

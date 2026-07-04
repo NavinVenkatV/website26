@@ -71,7 +71,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           {/* <LanguageSwitcher /> */}
-          <Theader/>
+          {/* <Theader/> */}
           {children}
         </NextIntlClientProvider>
       </body>

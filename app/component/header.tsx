@@ -85,7 +85,7 @@ export function Header({ name, bio, photo, email }: details) {
                     className="rounded-full w-[100] h-[100]"
                     src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWUycG41bGR4NXkxNDNyNDkzaWF1MHdocTN6ODFwY2VrODdhbWlnZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/brCNdnOeZSkZNofIFB/giphy.gif" alt="Hey" />  */}
             </div>
-            <motion.div variants={fadeInUp} className="mt-3">
+            {/* <motion.div variants={fadeInUp} className="mt-3">
                 {bio.split('\n').map((line, index) => {
                     return (
                         <div key={index} className="mt-5 whitespace-pre-line text-sm md:text-lg">
@@ -93,11 +93,12 @@ export function Header({ name, bio, photo, email }: details) {
                         </div>
                     );
                 })}
-            </motion.div>
-            <motion.div variants={fadeInUp} className="mt-3 flex">
+            </motion.div> */}
+            <div>{bio}</div>
+            <div className="mt-3 flex">
                 <p className="text-xs pr-2 md:text-xl flex flex-col justify-center items-center">{email}</p>
                 <p onClick={copy} className="cursor-pointer w-5 h-8 flex flex-col justify-center items-center">{!click ? <MdOutlineContentCopy /> : <TiTick color="green" />}</p>
-            </motion.div>
+            </div>
         </motion.div>
     )
 }
