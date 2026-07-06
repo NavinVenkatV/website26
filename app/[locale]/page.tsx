@@ -7,12 +7,19 @@ import { Experience } from "../component/experience";
 import { Projects } from "../component/projects";
 import { Education } from "../component/education";
 import { Footer } from "../component/footer";
+import { Bitcount_Single } from "next/font/google";
 
 import { useTranslations } from 'next-intl';
 import { motion, cubicBezier } from 'motion/react';
 import ScrollHero from "../component/scroll";
 
-// Animation Variants
+const font1 = Bitcount_Single({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+
 const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 
 const fadeInUp = {
@@ -39,11 +46,11 @@ export default function Home() {
   const tp = useTranslations('Projects');
 
   return (
-    <div className="flex flex-col  text-neutral-400   bg-red-800 z-0 overflow-hidden">
-     
-        <ScrollHero/>
-     
-      
+    <div className="flex flex-col  text-neutral-400 z-0 overflow-hidden">
+
+      <ScrollHero />
+
+
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -51,81 +58,95 @@ export default function Home() {
         variants={fadeInUp}
         className=" mt-2  bg-neutral-950/70 backdrop-blur-2xl mx-2 rounded-3xl p-6 md:px-12"
       >
-
-        <Header
-          name="Navin Venkat"
-          photo="photo"
-          bio={th('bio')}
-          email="vnavinvenkat@gmail.com"
-        />
-
-        <section className="mt-16">
-          <h1 className="font-bold text-3xl mb-2 text-white">
-            {t('career')}
-          </h1>
-          <p className="text-neutral-500 mb-8 text-lg">
-            {t('careerSubtitle')}
-          </p>
-
-          <div className="space-y-10">
-            <div>
-              <Experience
-                name={tc('agileSoftLabs')}
-                year={tc('agileYear')}
-                bio={tc('agileBio')}
-                link={Data.career.link1}
-              />
-            </div>
-
-            <div>
-              <Experience
-                name={tc('mlEngineer')}
-                year={tc('mlYear')}
-                bio={tc('mlBio')}
-                link={Data.career.link2}
-              />
-            </div>
+        <div className={`${font1.className} p-7  w-full h-auto   rounded-2xl`}>
+          <div className="flex justify-between">
+            <p>Profile | Navin </p>
+            <p>Paris, Fr</p>
           </div>
-        </section>
+          <p className="text-[300px] text-white">About</p>
+        </div>
 
-        {/* ====================== PROJECTS ====================== */}
-        <section className="mt-16">
-          <h1 className="font-bold text-3xl mb-2 text-white">
-            {t('projects')}
-          </h1>
-          <p className="text-neutral-500 mb-8 text-lg">
-            {t('projectsSubtitle')}
-          </p>
 
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <div>
-              <Projects
-                name={tp('cnnName')}
-                bio={tp('cnnBio')}
-                stacks="stack1"
-                link={Data.projects.link1}
-              />
+        <div className="rounded-2xl ">
+          <Header
+            name="Navin Venkat"
+            photo="photo"
+            bio={th('bio')}
+            email="vnavinvenkat@gmail.com"
+          />
+        </div>
+
+        <div className="md:flex justify-between bg-amber-300">
+          <section className="mt-16 p-2 md:p-4 bg-neutral-900 flex-1">
+            <h1 className={`font-bold ${font1.className} text-3xl mb-2 text-white`}>
+              {t('career')}
+            </h1>
+            <p className="text-neutral-500 mb-8 text-lg">
+              {t('careerSubtitle')}
+            </p>
+
+            <div className="space-y-10">
+              <div>
+                <Experience
+                  name={tc('agileSoftLabs')}
+                  year={tc('agileYear')}
+                  bio={tc('agileBio')}
+                  link={Data.career.link1}
+                />
+              </div>
+
+              <div>
+                <Experience
+                  name={tc('mlEngineer')}
+                  year={tc('mlYear')}
+                  bio={tc('mlBio')}
+                  link={Data.career.link2}
+                />
+              </div>
             </div>
+          </section>
 
-            <div>
-              <Projects
-                name={tp('nlpName')}
-                bio={tp('nlpBio')}
-                stacks="stack2"
-                link={Data.projects.link2}
-              />
-            </div>
+          {/* ====================== PROJECTS ====================== */}
+          <section className="mt-16 flex-1 bg-neutral-800 ">
+            <div className="">
+              <h1 className="font-bold text-3xl mb-2 text-white">
+              {t('projects')}
+            </h1>
+            <p className="text-neutral-500 mb-8 text-lg">
+              {t('projectsSubtitle')}
+            </p>
 
-            <div>
-              <Projects
-                name={tp('pipelineName')}
-                bio={tp('pipelineBio')}
-                stacks="stack3"
-                link={Data.projects.link3}
-              />
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div>
+                <Projects
+                  name={tp('cnnName')}
+                  bio={tp('cnnBio')}
+                  stacks="stack1"
+                  link={Data.projects.link1}
+                />
+              </div>
+
+              <div>
+                <Projects
+                  name={tp('nlpName')}
+                  bio={tp('nlpBio')}
+                  stacks="stack2"
+                  link={Data.projects.link2}
+                />
+              </div>
+
+              <div>
+                <Projects
+                  name={tp('pipelineName')}
+                  bio={tp('pipelineBio')}
+                  stacks="stack3"
+                  link={Data.projects.link3}
+                />
+              </div>
             </div>
-          </div>
-        </section>
+            </div>
+          </section>
+        </div>
 
         {/* ====================== MUSIC ====================== */}
         <section className="mt-16">
