@@ -1,35 +1,47 @@
-import { stringify } from "querystring";
-import { Data } from "../data/about"
+import { div } from "framer-motion/client";
 import { AiOutlineRise } from "react-icons/ai";
 
-//lets say they are sending company name, bio, year 
-
 interface details {
-    name : string, 
-    year : string, 
-    bio : string, 
-    skills ?: String,
-    link : string
+    name: string,
+    year: string,
+    bio: string,
+    skills?: string,
+    link: string
 }
 
-
-export function Experience ({name, year, bio, skills, link} : details) {
-    console.log(name)
+export function Experience({ name, year, bio, skills, link }: details) {
     return (
-        <div className="mb-10">
-            <div className="flex">
-                <p className="mr-2 flex justify-center">{name}</p>
-                <a className="flex justify-center items-center hover:scale-125" 
-                href={link}
-                ><AiOutlineRise/></a>
+        <div>
+            <div className="group mb-8 sm:mb-10 p-4 sm:p-5 rounded-xl border border-neutral-800 hover:border-neutral-700 bg-neutral-900/30 hover:bg-neutral-900/60 transition-colors duration-300">
+            <div className="flex items-center justify-between gap-2">
+                <h3 className="font-semibold text-white text-base sm:text-lg leading-snug">
+                    {name}
+                </h3>
+                
+                  <a  href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 flex items-center justify-center text-neutral-400 hover:text-emerald-400 transition-all duration-300 group-hover:scale-110 hover:scale-125"
+                    aria-label={`Visit ${name}`}
+                >
+                    <AiOutlineRise className="text-lg sm:text-xl" />
+                </a>
             </div>
-            <p className="text-sm mask-t-from-neutral-50">{year}</p>
-            <div className="mt-2 text-sm md:text-lg">
+
+            <p className="text-xs sm:text-sm text-neutral-500 mt-1 tracking-wide">
+                {year}
+            </p>
+
+            <p className="mt-3 text-sm sm:text-base leading-relaxed text-neutral-300">
                 {bio}
-            </div>
-            <div className="mt-2">
-                {skills}
-            </div>
+            </p>
+
+            {skills && (
+                <div className="mt-3 text-xs sm:text-sm text-neutral-500">
+                    {skills}
+                </div>
+            )}
+        </div>
         </div>
     )
 }

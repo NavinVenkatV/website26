@@ -19,7 +19,6 @@ const font1 = Bitcount_Single({
   display: 'swap',
 });
 
-
 const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 
 const fadeInUp = {
@@ -46,28 +45,28 @@ export default function Home() {
   const tp = useTranslations('Projects');
 
   return (
-    <div className="flex flex-col  text-neutral-400 z-0 overflow-hidden">
+    <div className="flex flex-col text-neutral-400 z-0 overflow-hidden">
 
       <ScrollHero />
-
 
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
         variants={fadeInUp}
-        className=" mt-2  bg-neutral-950/70 backdrop-blur-2xl mx-2 rounded-3xl p-6 md:px-12"
+        className="mt-2 bg-neutral-950/70 backdrop-blur-2xl mx-2 sm:mx-4 md:mx-6 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:px-12"
       >
-        <div className={`${font1.className} p-7  w-full h-auto   rounded-2xl`}>
-          <div className="flex justify-between">
-            <p>Profile | Navin </p>
+        <div className={`${font1.className} p-3 sm:p-5 md:p-7 w-full h-auto rounded-2xl overflow-hidden`}>
+          <div className="flex flex-col sm:flex-row justify-between gap-1 sm:gap-0 text-sm sm:text-base text-neutral-400">
+            <p>Profile | Navin</p>
             <p>Paris, Fr</p>
           </div>
-          <p className="text-[300px] text-white">About</p>
+          <p className="text-[18vw] sm:text-[15vw] md:text-[12vw] lg:text-[180px] leading-none text-white">
+            About
+          </p>
         </div>
 
-
-        <div className="rounded-2xl ">
+        <div className="rounded-2xl">
           <Header
             name="Navin Venkat"
             photo="photo"
@@ -76,86 +75,76 @@ export default function Home() {
           />
         </div>
 
-        <div className="md:flex justify-between bg-amber-300">
-          <section className="mt-16 p-2 md:p-4 bg-neutral-900 flex-1">
-            <h1 className={`font-bold ${font1.className} text-3xl mb-2 text-white`}>
+        <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-6">
+          {/* ====================== CAREER ====================== */}
+          <section className="mt-16 p-4 sm:p-6 rounded-2xl bg-neutral-900/60 flex-1">
+            <h1 className={`font-bold ${font1.className} text-2xl sm:text-3xl mb-2 text-white`}>
               {t('career')}
             </h1>
-            <p className="text-neutral-500 mb-8 text-lg">
+            <p className="text-neutral-500 mb-8 text-base sm:text-lg">
               {t('careerSubtitle')}
             </p>
 
             <div className="space-y-10">
-              <div>
+            
                 <Experience
                   name={tc('agileSoftLabs')}
                   year={tc('agileYear')}
                   bio={tc('agileBio')}
                   link={Data.career.link1}
                 />
-              </div>
+          
 
-              <div>
+        
                 <Experience
                   name={tc('mlEngineer')}
                   year={tc('mlYear')}
                   bio={tc('mlBio')}
                   link={Data.career.link2}
                 />
-              </div>
+       
             </div>
           </section>
+          </div>
 
           {/* ====================== PROJECTS ====================== */}
-          <section className="mt-16 flex-1 bg-neutral-800 ">
-            <div className="">
-              <h1 className="font-bold text-3xl mb-2 text-white">
-              {t('projects')}
-            </h1>
-            <p className="text-neutral-500 mb-8 text-lg">
-              {t('projectsSubtitle')}
-            </p>
+          {/* ====================== PROJECTS ====================== */}
+<section className="mt-16 p-4 sm:p-6 rounded-2xl bg-neutral-900/40 flex-1">
+  <h1 className={`font-bold ${font1.className} text-2xl sm:text-3xl mb-2 text-white`}>
+    {t('projects')}
+  </h1>
+  <p className="text-neutral-500 mb-8 text-base sm:text-lg">
+    {t('projectsSubtitle')}
+  </p>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <div>
-                <Projects
-                  name={tp('cnnName')}
-                  bio={tp('cnnBio')}
-                  stacks="stack1"
-                  link={Data.projects.link1}
-                />
-              </div>
-
-              <div>
-                <Projects
-                  name={tp('nlpName')}
-                  bio={tp('nlpBio')}
-                  stacks="stack2"
-                  link={Data.projects.link2}
-                />
-              </div>
-
-              <div>
-                <Projects
-                  name={tp('pipelineName')}
-                  bio={tp('pipelineBio')}
-                  stacks="stack3"
-                  link={Data.projects.link3}
-                />
-              </div>
-            </div>
-            </div>
-          </section>
-        </div>
-
-        {/* ====================== MUSIC ====================== */}
-        <section className="mt-16">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <Projects
+      name={tp('cnnName')}
+      bio={tp('cnnBio')}
+      stacks="stack1"
+      link={Data.projects.link1}
+    />
+    <Projects
+      name={tp('nlpName')}
+      bio={tp('nlpBio')}
+      stacks="stack2"
+      link={Data.projects.link2}
+    />
+    <Projects
+      name={tp('pipelineName')}
+      bio={tp('pipelineBio')}
+      stacks="stack3"
+      link={Data.projects.link3}
+    />
+  </div>
+</section>
+<section className="mt-16">
           <div className="md:text-2xl text-green-500 font-medium mb-4">
             {t('music')}
           </div>
           <iframe
             title="Spotify Embed: Recommendation Playlist"
-            src="https://open.spotify.com/embed/playlist/50Mq1NFF7fGYQ8oXNLrlbb?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/track/4ipD5CMmWkehabGlAGTOBB?si=55ee2d00ecd4429a?utm_source=generator&theme=0"
             width="100%"
             height="380"
             frameBorder="0"
@@ -164,10 +153,9 @@ export default function Home() {
             className="rounded-2xl"
           />
         </section>
-
         {/* ====================== EDUCATION ====================== */}
         <section className="mt-16">
-          <h1 className="font-bold text-3xl mb-8 text-white">
+          <h1 className="font-bold text-2xl sm:text-3xl mb-8 text-white">
             {t('education')}
           </h1>
           <Education />

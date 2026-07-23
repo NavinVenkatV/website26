@@ -1,50 +1,50 @@
 import { Data } from "../data/about";
 import { useTranslations } from 'next-intl';
+import { AiOutlineRise } from "react-icons/ai";
 
 interface details {
-    link : string,
+    link: string,
     name: string,
     bio: string,
     stacks: keyof typeof Data.techStacks
 }
 
-const BLUR_FADE_DELAY = 0.4;
-
 export function Projects({ link, name, bio, stacks }: details) {
     const t = useTranslations('Projects');
     const techList = Data.techStacks[stacks] || [];
+
     return (
-        <div className="mb-10 border-1 border-neutral-800 rounded-2xl border-whiten w-auto md:w-[350] h-auto px-2 py-2 ">
-            <a className="cursor-pointer text-white" href={link} target="_blank ">{name} 
-                <span className="text-sm font-extralight text-amber-600 px-4 cursor-pointer hover:underline">{t('linkText')}</span>
+        <div>
+            <div className="mb-8 sm:mb-10 border border-neutral-800 hover:border-neutral-700 bg-neutral-900/30 hover:bg-neutral-900/60 transition-colors duration-300 rounded-2xl w-full h-full px-4 py-4">
+            
+               <a  className="inline-flex items-center flex-wrap gap-x-3 text-white font-semibold hover:text-red-500 transition-colors"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {name}
+                <span className="text-xs sm:text-sm font-normal text-red-600 hover:underline">
+                    {t('linkText')}
+                    <AiOutlineRise className="inline ml-1" />
+                </span>
             </a>
-            
-            {/* <Image
-                className="w-full h-full mt-3 rounded-xl"
-                src={`/${image}`}
-                alt="image"
-                width={800}
-                height={800}
-            ></Image> */}
-            <p className="pt-2 whitespace-pre-line text-sm md:text-lg text-neutral-400">{bio}</p>
-            
-            {/* {techList && (
-                techList.map((st, index) => (
-                    <div key={index} className="text-black rounded-2xl flex  text-sm">
-                        <div key={index} className="text-black bg-white rounded-xl px-3 mr-3 mt-2">
+
+            <p className="pt-2 whitespace-pre-line text-sm sm:text-base leading-relaxed text-neutral-400">
+                {bio}
+            </p>
+
+            {techList.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-3">
+                    {techList.map((st, index) => (
+                        <div
+                            key={index}
+                            className="text-red-300 bg-red-950/40 border border-red-900/50 rounded-lg text-xs px-2.5 py-1"
+                        >
                             {st}
                         </div>
-                    </div>
-                ))
-            )} */}
-            <div className=" text-black rounded-2xl flex flex-wrap text-sm md:text-lg mt-3">
-            {
-                techList.map((st, index) => (
-                    <div key={index} className="text-black bg-white rounded-xl text-xs px-2 mr-3 mt-2">
-                        {st}
-                    </div>
-                ))
-            }
+                    ))}
+                </div>
+            )}
         </div>
         </div>
     )
