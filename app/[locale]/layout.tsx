@@ -5,7 +5,7 @@ import { Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '../../i18n/routing';
-import { Theader } from "../component/tHeader";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
