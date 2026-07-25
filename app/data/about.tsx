@@ -17,62 +17,6 @@ Let's build something intelligent together.`,
 
     email: 'vnavinvenkat@gmail.com',
 
-    skills: [
-        // Core ML & Data Science
-        "Python",
-        "PyTorch",
-        "TensorFlow",
-        "Scikit-learn",
-        "NumPy",
-        "Pandas",
-        "SQL",
-        
-        // Deep Learning Specializations
-        "Computer Vision",
-        "CNNs (Convolutional Neural Networks)",
-        "Natural Language Processing",
-        "RNNs & LSTMs",
-        "Transformers & Attention",
-        "Hugging Face",
-        "BERT & GPT",
-        "Transfer Learning",
-        
-        // ML Engineering & Production
-        "FastAPI",
-        "Model Deployment",
-        "Docker",
-        "Jupyter Notebooks",
-        "Weights & Biases",
-        "Streamlit",
-        "REST APIs",
-        
-        // Data Processing & Engineering
-        "Data Preprocessing",
-        "Feature Engineering",
-        "Data Exploration (EDA)",
-        "Model Evaluation",
-        "Hyperparameter Tuning",
-        
-        // Cloud & DevOps
-        "AWS (EC2/S3)",
-        "Linux",
-        "Git & GitHub",
-        "GitHub Actions",
-        "CI/CD",
-        
-        // Full-Stack (Retained from background)
-        "TypeScript",
-        "JavaScript",
-        "React.js",
-        "Next.js",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "MongoDB",
-        "Tailwind CSS",
-        "C++",
-        "Bash",
-    ],
 
     career: {
         company1: "AgileSoftLabs",
@@ -86,57 +30,57 @@ Let's build something intelligent together.`,
     },
 
     "projects": {
-  "link1": "https://github.com/NavinVenkatV/Clairo",
-  "link2": "https://dm2-buy.vercel.app",
-  "link3": "https://exaai.vercel.app",
-  "link4": "https://pingmeyourwebsite.vercel.app"
-},
+        "link1": "https://github.com/NavinVenkatV/Clairo",
+        "link2": "https://dm2-buy.vercel.app",
+        "link3": "https://exaai.vercel.app",
+        "link4": "https://pingmeyourwebsite.vercel.app"
+    },
 
     "techStacks": {
-  "stack1": [
-    "FastAPI",
-    "Python",
-    "LangChain",
-    "ChromaDB",
-    "OpenAI API",
-    "Cohere",
-    "Next.js 14",
-    "Tailwind CSS",
-    "NextAuth",
-    "Railway",
-    "Vercel",
-    "GitHub Actions"
-  ],
-  "stack2": [
-    "React.js",
-    "Node.js",
-    "MongoDB",
-    "Socket.IO",
-    "Tailwind CSS",
-    "Express.js",
-    "Vercel"
-  ],
-  "stack3": [
-    "Next.js",
-    "OpenAI API",
-    "Anthropic API",
-    "PostgreSQL",
-    "AWS Lambda",
-    "Vercel",
-    "TypeScript"
-  ],
-  "stack4": [
-    "Node.js",
-    "TypeScript",
-    "Bull Queue",
-    "PostgreSQL",
-    "Prisma ORM",
-    "NodeMailer",
-    "AWS EC2",
-    "GitHub Actions",
-    "Docker"
-  ]
-},
+        "stack1": [
+            "FastAPI",
+            "Python",
+            "LangChain",
+            "ChromaDB",
+            "OpenAI API",
+            "Cohere",
+            "Next.js 14",
+            "Tailwind CSS",
+            "NextAuth",
+            "Railway",
+            "Vercel",
+            "GitHub Actions"
+        ],
+        "stack2": [
+            "React.js",
+            "Node.js",
+            "MongoDB",
+            "Socket.IO",
+            "Tailwind CSS",
+            "Express.js",
+            "Vercel"
+        ],
+        "stack3": [
+            "Next.js",
+            "OpenAI API",
+            "Anthropic API",
+            "PostgreSQL",
+            "AWS Lambda",
+            "Vercel",
+            "TypeScript"
+        ],
+        "stack4": [
+            "Node.js",
+            "TypeScript",
+            "Bull Queue",
+            "PostgreSQL",
+            "Prisma ORM",
+            "NodeMailer",
+            "AWS EC2",
+            "GitHub Actions",
+            "Docker"
+        ]
+    },
 
     links: {
         github: "https://github.com/NavinVenkatV",
