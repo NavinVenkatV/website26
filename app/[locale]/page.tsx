@@ -8,16 +8,19 @@ import { Projects } from "../component/projects";
 import { Education } from "../component/education";
 import { Footer } from "../component/footer";
 import { Bitcount_Single } from "next/font/google";
+import { Caveat } from "next/font/google";
+
+const font1 = Caveat({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
 
 import { useTranslations } from 'next-intl';
 import { motion, cubicBezier } from 'motion/react';
 import ScrollHero from "../component/scroll";
 
-const font1 = Bitcount_Single({
-  subsets: ['latin'],
-  weight: ['400'],
-  display: 'swap',
-});
+
 
 const easeC = cubicBezier(0.21, 0.92, 0.3, 1)
 
