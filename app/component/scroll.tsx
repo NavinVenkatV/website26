@@ -51,7 +51,7 @@ export default function ScrollHero() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className={`${font3.className} text-white text-5xl sm:text-7xl mb-8`}
             >
-              Navin
+              Eureka!!
             </motion.p>
 
             {/* progress bar */}
