@@ -119,23 +119,26 @@ export default function Home() {
               bio={tp('codeItBio')}
               stacks="stack2"
               link={Data.projects.link2}
+              image="codeit.png"
             />
             <Projects
               name={tp('exaName')}
               bio={tp('exaBio')}
               stacks="stack3"
               link={Data.projects.link3}
+              image="exaai.png"
             />
             <Projects
               name={tp('pingMeName')}
               bio={tp('pingMeBio')}
               stacks="stack4"
               link={Data.projects.link4}
+              image="pingme.png"
             />
           </div>
         </section>
         <section className="mt-16">
-          <div className="md:text-2xl text-green-500 font-medium mb-4">
+          <div className="md:text-2xl text-neutral-500 font-medium mb-4">
             {t('music')}
           </div>
           <iframe
