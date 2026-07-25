@@ -86,59 +86,55 @@ export default function Home() {
             </p>
 
             <div className="space-y-10">
-            
-                <Experience
-                  name={tc('agileSoftLabs')}
-                  year={tc('agileYear')}
-                  bio={tc('agileBio')}
-                  link={Data.career.link1}
-                />
-          
 
-        
-                <Experience
-                  name={tc('mlEngineer')}
-                  year={tc('mlYear')}
-                  bio={tc('mlBio')}
-                  link={Data.career.link2}
-                />
-       
+              <Experience
+                name={tc('agileSoftLabs')}
+                year={tc('agileYear')}
+                bio={tc('agileBio')}
+                link={Data.career.link1}
+              />
+
             </div>
           </section>
+        </div>
+
+        {/* ====================== PROJECTS ====================== */}
+        <section className="mt-16 p-4 sm:p-6 rounded-2xl bg-neutral-900/40 flex-1">
+          <h1 className={`font-bold ${font1.className} text-2xl sm:text-3xl mb-2 text-white`}>
+            {t('projects')}
+          </h1>
+          <p className="text-neutral-500 mb-8 text-base sm:text-lg">
+            {t('projectsSubtitle')}
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Projects
+              name={tp('clairoName')}
+              bio={tp('clairoBio')}
+              stacks="stack1"
+              link={Data.projects.link1}
+            />
+            <Projects
+              name={tp('codeItName')}
+              bio={tp('codeItBio')}
+              stacks="stack2"
+              link={Data.projects.link2}
+            />
+            <Projects
+              name={tp('exaName')}
+              bio={tp('exaBio')}
+              stacks="stack3"
+              link={Data.projects.link3}
+            />
+            <Projects
+              name={tp('pingMeName')}
+              bio={tp('pingMeBio')}
+              stacks="stack4"
+              link={Data.projects.link4}
+            />
           </div>
-
-          {/* ====================== PROJECTS ====================== */}
-          {/* ====================== PROJECTS ====================== */}
-<section className="mt-16 p-4 sm:p-6 rounded-2xl bg-neutral-900/40 flex-1">
-  <h1 className={`font-bold ${font1.className} text-2xl sm:text-3xl mb-2 text-white`}>
-    {t('projects')}
-  </h1>
-  <p className="text-neutral-500 mb-8 text-base sm:text-lg">
-    {t('projectsSubtitle')}
-  </p>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <Projects
-      name={tp('cnnName')}
-      bio={tp('cnnBio')}
-      stacks="stack1"
-      link={Data.projects.link1}
-    />
-    <Projects
-      name={tp('nlpName')}
-      bio={tp('nlpBio')}
-      stacks="stack2"
-      link={Data.projects.link2}
-    />
-    <Projects
-      name={tp('pipelineName')}
-      bio={tp('pipelineBio')}
-      stacks="stack3"
-      link={Data.projects.link3}
-    />
-  </div>
-</section>
-<section className="mt-16">
+        </section>
+        <section className="mt-16">
           <div className="md:text-2xl text-green-500 font-medium mb-4">
             {t('music')}
           </div>

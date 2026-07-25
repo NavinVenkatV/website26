@@ -64,7 +64,7 @@ export default function ScrollHero() {
           
           className={` ${font3.className} absolute inset-x-0 top-[40%] -translate-y-1/2 text-center text-6xl font-semibold tracking-tight text-white sm:text-8xl`}
         >
-          Hi! I'm nav'
+          Hi! I'm Navin Venkat
           <p className="text-2xl">AI/Ml | Full Stack | Music</p>
           <p className="text-sm">Website build in progress...</p>
         </motion.h1>

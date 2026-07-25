@@ -17,20 +17,20 @@ export function Projects({ link, name, bio, stacks }: details) {
         <div>
             <div className="mb-8 sm:mb-10 border border-neutral-800 hover:border-neutral-700 bg-neutral-900/30 hover:bg-neutral-900/60 transition-colors duration-300 rounded-2xl w-full h-full px-4 py-4">
             
-               <a  className="inline-flex items-center flex-wrap gap-x-3 text-white font-semibold hover:text-red-500 transition-colors"
+               <a  className="inline-flex items-center flex-wrap gap-x-3 text-white font-semibold hover:text-neutral-700 transition-colors"
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                {name}
-                <span className="text-xs sm:text-sm font-normal text-red-600 hover:underline">
+                {name} <AiOutlineRise className="inline ml-1" />
+                {/* <span className="text-xs sm:text-sm font-normal text-red-600 hover:underline">
                     {t('linkText')}
                     <AiOutlineRise className="inline ml-1" />
-                </span>
+                </span> */}
             </a>
 
             <p className="pt-2 whitespace-pre-line text-sm sm:text-base leading-relaxed text-neutral-400">
-                {bio}
+                {bio    }
             </p>
 
             {techList.length > 0 && (

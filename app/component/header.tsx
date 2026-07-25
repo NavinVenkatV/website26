@@ -60,7 +60,7 @@ export function Header({ name, bio, photo, email }: details) {
             animate="show"
             className="p-2 sm:p-4 md:p-6"
         >
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10 rounded-2xl w-full">
+            <div className="flex flex-col md:flex-row  md:items-start gap-8 md:gap-10 rounded-2xl w-full">
 
                 <motion.div
                     variants={fadeInUp}
@@ -77,13 +77,13 @@ export function Header({ name, bio, photo, email }: details) {
 
                 <motion.div
                     variants={fadeInUp}
-                    className="font-medium text-base sm:text-lg leading-relaxed flex-1 space-y-4 text-neutral-300 text-center md:text-left"
+                    className="font-medium text-base sm:text-lg leading-relaxed flex-1 space-y-4 text-neutral-300  md:text-left"
                 >
                     <p className="text-xl sm:text-2xl font-bold text-white">
                         Hey! I&apos;m Navin, and I build intelligent systems.
                     </p>
                     <p>
-                        A few years ago, I was deep in the full-stack world—React, Node,
+                        A few years ago, I was deep in the full-stack world like React, Node,
                         databases, the whole thing. I loved shipping products and solving
                         problems. But somewhere along the way, I realized the coolest
                         problems weren&apos;t just about building fast software; they were
@@ -105,13 +105,13 @@ export function Header({ name, bio, photo, email }: details) {
                         You&apos;ll find my projects on GitHub—complete pipelines from data
                         to deployment. No half-finished experiments, just solid ML work.
                     </p>
-                    <p className="text-red-900 font-semibold">
+                    <p className="text-neutral-600 font-semibold">
                         Let&apos;s build something intelligent together.
                     </p>
                 </motion.div>
             </div>
 
-            <div className="mt-6 flex items-center justify-center md:justify-start gap-2">
+            <div className="mt-6 flex md:items-center  md:justify-start gap-2">
                 <p className="text-xs sm:text-sm md:text-base text-neutral-400">
                     {email}
                 </p>

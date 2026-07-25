@@ -13,25 +13,23 @@
     "bio": "I build intelligent systems using machine learning and deep learning.\n\nThree years ago, I was purely a full-stack developer—React, Node, MongoDB. I built great products, but realized the most impactful software isn't just fast or beautiful; it's intelligent.\n\nSo I made a decision: dive deep into ML.\n\nFor the past 6 months, I've been on an intense learning journey. I trained CNNs for image classification, fine-tuned transformers for NLP, and deployed models to production. But I didn't just watch tutorials—I built end-to-end systems from data loading to deployment.\n\nNow I'm at the intersection of full-stack engineering and machine learning. I understand how to build systems that scale AND how to train models that actually work.\n\nMy goal: Become a world-class ML engineer solving real problems.\n\nGitHub is where you'll find my work—complete projects, not random scripts. Every project includes clean code, documentation, and a live demo.\n\nLet's build something intelligent together."
   },
   "Career": {
-    "agileSoftLabs": "AgileSoftLabs",
-    "freelancer": "Freelancer",
-    "agileYear": "Jan 2025 – Apr 2025",
-    "freeYear": "2024 – Present",
-    "agileBio": "Built scalable APIs and user interfaces using React.js and Next.js for enterprise clients. I integrated MongoDB for persistent storage and Firebase for real-time updates, while optimizing application performance by modularizing large codebases.",
-    "freeBio": "As a freelance web developer, I design and deploy client websites and SaaS applications using the MERN stack with Dockerized CI/CD workflows. My work includes implementing authentication, payment gateways, and performance dashboards, with a focus on responsive UI/UX and reusable components."
-  },
+  "agileSoftLabs": "AgileSoftLabs",
+  "agileYear": "Jan 2025 – Apr 2025",
+  "agileBio": "At AgileSoftLabs, I worked as a Full-Stack Developer intern where I designed and maintained production-grade REST APIs using Node.js, Express.js and TypeScript, covering both unit and integration testing with Jest to ensure reliability across endpoints. One of my key contributions was leading the frontend migration from React.js to Next.js with SSR and SSG, which significantly improved page load performance and search engine visibility for enterprise clients. On the database side, I restructured PostgreSQL and MongoDB schemas to eliminate bottlenecks under high-traffic conditions, reducing query latency by a measurable margin. I also took ownership of the DevOps layer by setting up automated CI/CD pipelines through GitHub Actions and managing Docker-based service deployments on AWS EC2, complete with production monitoring and alerting. Beyond the core engineering work, I actively integrated AI-assisted tooling into our daily workflow, using GitHub Copilot and LLM APIs for code generation, automated pull request reviews, and living documentation. This experience gave me a strong foundation in shipping production software within an agile team environment, working closely with designers, product managers and senior engineers on a daily basis."
+},
   "Projects": {
-    "codeItName": "CodeIt: Real-Time Code Collaboration Platform",
-    "codeItBio": "Real-time multi-user code editor with live sync, cursor tracking, secure rooms, and syntax highlighting—built for remote pair programming and team coding.",
+    "clairoName": "Clairo: AI Document Intelligence Platform",
+    "clairoBio": "Production-grade RAG system that lets users upload any PDF and ask questions in plain English — every answer comes with an exact page citation and zero hallucination. Built with hybrid BM25 + vector retrieval, Cohere cross-encoder reranking, and a Ragas evaluation pipeline CI-gated in GitHub Actions. Faithfulness improved from 0.61 to 0.89 after reranking. Multi-user architecture with NextAuth Google and X OAuth. Phase 2 adds fully local inference via Ollama with zero data egress.",
+    "codeItName": "CodeIt: Real-Time Collaborative Code Editor",
+    "codeItBio": "Multi-user collaborative coding platform with real-time synchronisation under 100ms via WebSockets (Socket.IO). Features live cursor tracking, secure room management, and syntax highlighting — built for remote pair programming and team coding sessions. Event-driven scalable architecture using React, Node.js, MongoDB and Tailwind CSS.",
     "exaName": "Exa: AI-Powered Search Engine",
-    "exaBio": "AI-powered search tool integrated with Exa API and LLMs for concise, semantic results beyond keywords—with secure auth, fast SSR performance, and Vercel deployment. Ideal for privacy-focused natural language search.",
-    "pingMeName": "PingMe: Uptime Monitoring SaaS Tool",
-    "pingMeBio": "Subscription-based website monitoring service with real-time pings, downtime email alerts, performance metrics dashboards, user auth, and tiered plans—built for reliable uptime tracking and instant notifications.",
-    "linkText": "link"
+    "exaBio": "LLM-powered search engine with real-time data retrieval and streaming responses via OpenAI and Anthropic APIs. Delivers concise semantic results beyond keyword matching, with advanced cache optimisation achieving a 95% cache hit rate, serverless deployment on AWS Lambda, and optimised PostgreSQL queries reducing latency by 60%.",
+    "pingMeName": "PingMe: Uptime Monitoring SaaS",
+    "pingMeBio": "Subscription-based website monitoring platform with real-time uptime pings, automated downtime email alerts via NodeMailer, performance metrics dashboards, and tiered subscription plans. Built with Node.js, TypeScript, Bull Queue for distributed async job processing, PostgreSQL and Prisma ORM — deployed on AWS EC2 with GitHub Actions CI/CD and 99.9% uptime."
   },
   "Education": {
     "school": "EPITA, l'école des ingénieurs en intelligence informatique",
     "degree": "Master of Science in Computer Science",
-    "year": "2025-26"
+    "year": "2025-27"
   }
 }

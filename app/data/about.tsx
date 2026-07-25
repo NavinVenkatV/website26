@@ -85,63 +85,58 @@ Let's build something intelligent together.`,
         link2: 'https://github.com/NavinVenkatV'
     },
 
-    projects: {
-        link1: "https://github.com/NavinVenkatV/image-classification-cnn",
-        link2: 'https://github.com/NavinVenkatV/sentiment-analysis-transformers',
-        link3: "https://github.com/NavinVenkatV/ml-pipeline-end-to-end",
-        
-        name1: "Image Classification with CNN",
-        image1: "cnn-classifier.png",
-        bio1: `Built a deep learning model using PyTorch to classify images with 90%+ accuracy on test set. Implemented data augmentation techniques, transfer learning with pre-trained ResNet50, and custom training loops. Trained on GPU for 50+ epochs with learning rate scheduling. Evaluated with precision, recall, and F1 scores. Deployed with FastAPI REST API and Streamlit web interface for real-time predictions. Code on GitHub with complete documentation.`,
-        
-        name2: "Sentiment Analysis with Fine-tuned Transformers",
-        image2: "nlp-sentiment.png",
-        bio2: `Fine-tuned BERT (Bidirectional Encoder Representations from Transformers) on custom Twitter sentiment dataset. Achieved 88% accuracy through hyperparameter optimization and data preprocessing. Used Hugging Face Transformers library for easy model integration. Built REST API with FastAPI for inference. Containerized entire application with Docker for reproducibility. Hosted live demo with authentication. Includes experiment tracking with Weights & Biases for reproducible results.`,
-        
-        name3: 'End-to-End ML Pipeline: Predictive System',
-        image3: "ml-pipeline.png",
-        bio3: `Complete machine learning workflow: data collection from CSV/APIs → exploratory data analysis (EDA) with Pandas → feature engineering → model training (Scikit-learn + PyTorch) → evaluation metrics → hyperparameter tuning → deployment. Built with clean, modular Python code. Includes data validation, preprocessing pipelines, and model monitoring. Deployed with FastAPI and Docker. Experiment tracking with Weights & Biases. Production-ready code with unit tests, logging, and documentation.`
-    },
+    "projects": {
+  "link1": "https://github.com/NavinVenkatV/Clairo",
+  "link2": "https://dm2-buy.vercel.app",
+  "link3": "https://exaai.vercel.app",
+  "link4": "https://pingmeyourwebsite.vercel.app"
+},
 
-    techStacks: {
-        stack1: [
-            'Python',
-            'PyTorch',
-            'CNN',
-            'OpenCV',
-            'NumPy',
-            'Pandas',
-            'Scikit-learn',
-            'FastAPI',
-            'Streamlit',
-            'Docker',
-            'Jupyter'
-        ],
-        stack2: [
-            'Python',
-            'Hugging Face',
-            'Transformers',
-            'BERT',
-            'PyTorch',
-            'FastAPI',
-            'PostgreSQL',
-            'Docker',
-            'Weights & Biases',
-            'NextAuth'
-        ],
-        stack3: [
-            'Python',
-            'Pandas',
-            'NumPy',
-            'Scikit-learn',
-            'PyTorch',
-            'FastAPI',
-            'Docker',
-            'Weights & Biases',
-            'PostgreSQL',
-            'Git'
-        ]
-    },
+    "techStacks": {
+  "stack1": [
+    "FastAPI",
+    "Python",
+    "LangChain",
+    "ChromaDB",
+    "OpenAI API",
+    "Cohere",
+    "Next.js 14",
+    "Tailwind CSS",
+    "NextAuth",
+    "Railway",
+    "Vercel",
+    "GitHub Actions"
+  ],
+  "stack2": [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "Socket.IO",
+    "Tailwind CSS",
+    "Express.js",
+    "Vercel"
+  ],
+  "stack3": [
+    "Next.js",
+    "OpenAI API",
+    "Anthropic API",
+    "PostgreSQL",
+    "AWS Lambda",
+    "Vercel",
+    "TypeScript"
+  ],
+  "stack4": [
+    "Node.js",
+    "TypeScript",
+    "Bull Queue",
+    "PostgreSQL",
+    "Prisma ORM",
+    "NodeMailer",
+    "AWS EC2",
+    "GitHub Actions",
+    "Docker"
+  ]
+},
 
     links: {
         github: "https://github.com/NavinVenkatV",
