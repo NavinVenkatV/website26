@@ -114,6 +114,7 @@ export default function Home() {
               stacks="stack1"
               link={Data.projects.link1}
               image="clairo.png"
+              
             />
             <Projects
               name={tp('codeItName')}
