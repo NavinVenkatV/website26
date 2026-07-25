@@ -2,7 +2,7 @@
 
 import { Header } from "../component/header";
 import { Data } from "../data/about";
-import { Skill } from "../component/skills";
+// import { Skill } from "../component/skills";
 import { Experience } from "../component/experience";
 import { Projects } from "../component/projects";
 import { Education } from "../component/education";
@@ -114,7 +114,7 @@ export default function Home() {
               stacks="stack1"
               link={Data.projects.link1}
               image="clairo.png"
-              
+
             />
             <Projects
               name={tp('codeItName')}
