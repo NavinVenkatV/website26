@@ -14,7 +14,7 @@
   },
   "Career": {
   "agileSoftLabs": "Software Developer Intern @AgileSoftLabs",
-  "agileYear": "Jan 2025 – Apr 2025",
+  "agileYear": "July 2024 – May 2025",
   "agileBio": "Built and maintained scalable REST APIs with Node.js, Express.js and TypeScript, with unit and integration testing (Jest). Migrated the frontend from React.js to Next.js (SSR/SSG), improving performance and SEO. Optimised PostgreSQL and MongoDB schemas to reduce latency on high-traffic endpoints. Set up CI/CD pipelines via GitHub Actions and deployed Docker services on AWS EC2 with production monitoring. Integrated AI tools including Copilot and LLM APIs for code generation, automated review and documentation."
 },
   "Projects": {

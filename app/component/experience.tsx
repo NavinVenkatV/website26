@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+
 import { AiOutlineRise } from "react-icons/ai";
 
 interface details {
