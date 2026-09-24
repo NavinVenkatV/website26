@@ -25,10 +25,10 @@ export default function ScrollHero() {
     offset: ["start start", "end start"],
   });
 
-  const bgScale       = useTransform(scrollYProgress, [0, 1], [1, 1.4]);
-  const nameOpacity   = useTransform(scrollYProgress, [0, 1], [1, 0]);
-  const nameBlur      = useTransform(scrollYProgress, [0, 1], [0, 16]);
-  const nameFilter    = useTransform(nameBlur, (v) => `blur(${v}px)`);
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.4]);
+  const nameOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const nameBlur = useTransform(scrollYProgress, [0, 1], [0, 16]);
+  const nameFilter = useTransform(nameBlur, (v) => `blur(${v}px)`);
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0, 0.6]);
 
   return (
@@ -69,8 +69,11 @@ export default function ScrollHero() {
 
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <motion.img
-          src="/background.png"
+          src="/background.webp"
           alt=""
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           style={{ scale: bgScale }}
           className="absolute inset-0 h-full w-full object-cover"
         />
