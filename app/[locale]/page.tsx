@@ -110,6 +110,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Projects
+              name={tp('reduckName')}
+              bio={tp('reduckBio')}
+              stacks="stack5"
+              link={Data.projects.link5}
+            />
+            <Projects
               name={tp('clairoName')}
               bio={tp('clairoBio')}
               stacks="stack1"

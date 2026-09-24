@@ -1,21 +1,37 @@
 export const Data = {
-    bio: `I build intelligent systems using machine learning and deep learning.
+    bio: `Hey! I'm Navin, an AI and full stack engineer.
 
-Three years ago, I was purely a full-stack developer—React, Node, MongoDB. I built great products, but realized the most impactful software isn't just fast or beautiful; it's intelligent.
+I build with Python, PyTorch, TypeScript, React, Next.js, FastAPI, and LangChain. Full stack products on one side, models and agents on the other.
 
-So I made a decision: dive deep into ML.
+These days I spend most of my time building AI agents: systems that can use tools, talk to APIs, control a browser, and actually get work done, not just chat. RAG, MCP, OpenAI, Anthropic, the usual stack.
 
-For the past 6 months, I've been on an intense learning journey. I trained CNNs for image classification, fine-tuned transformers for NLP, and deployed models to production. But I didn't just watch tutorials—I built end-to-end systems from data loading to deployment.
+You'll find my work on GitHub: apps, agents, and end to end systems you can run, not half finished notebooks.
 
-Now I'm at the intersection of full-stack engineering and machine learning. I understand how to build systems that scale AND how to train models that actually work.
-
-My goal: Become a world-class ML engineer solving real problems.
-
-GitHub is where you'll find my work—complete projects, not random scripts. Every project includes clean code, documentation, and a live demo.
-
-Let's build something intelligent together.`,
+Let's build something together.`,
 
     email: 'vnavinvenkat@gmail.com',
+
+    skills: [
+        "Python",
+        "PyTorch",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "FastAPI",
+        "LangChain",
+        "MCP",
+        "OpenAI",
+        "Anthropic",
+        "RAG",
+        "ChromaDB",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "GitHub Actions",
+        "Tailwind CSS"
+    ],
 
 
     career: {
@@ -33,7 +49,8 @@ Let's build something intelligent together.`,
         "link1": "https://github.com/NavinVenkatV/Clairo",
         "link2": "https://dm2-buy.vercel.app",
         "link3": "https://exaai.vercel.app",
-        "link4": "https://pingmeyourwebsite.vercel.app"
+        "link4": "https://pingmeyourwebsite.vercel.app",
+        "link5": "https://app.notion.com/p/Reduck-Test-technique-Vibe-Coder-Navin-Venkat-Venkatesan-3e2c031d2fbe81c7ae9cd037e461d877?source=copy_link"
     },
 
     "techStacks": {
@@ -79,6 +96,13 @@ Let's build something intelligent together.`,
             "AWS EC2",
             "GitHub Actions",
             "Docker"
+        ],
+        "stack5": [
+            "MCP",
+            "Claude Code",
+            "Browser Automation",
+            "TypeScript",
+            "Agent Tooling"
         ]
     },
 

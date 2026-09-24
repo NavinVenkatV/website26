@@ -10,7 +10,7 @@
   },
   "Header": {
     "greeting": "Salut ! Je suis {name}",
-    "bio": "J'aime être la personne qui transforme des idées en produits réels.\n\nJ'ai commencé mon parcours par curiosité en bricolant avec du code et le Web3, mais je suis vite devenu accro à la création d'applications full-stack, à l'exploration des contrats intelligents Solana et à l'expérimentation de modèles IA/ML. J'ai aussi un faible pour une esthétique épurée et moderne dans les expériences numériques.\n\nEn cours de route, j'ai touché au design frontend, à l'ingénierie backend, et même un peu à l'infrastructure cloud. Aujourd'hui, je fais un peu de tout, de la création d'applications décentralisées au prototypage d'outils basés sur l'IA."
+    "bio": "Salut ! Je suis Navin, ingénieur IA et full stack.\n\nJe construis avec Python, PyTorch, TypeScript, React, Next.js, FastAPI et LangChain. Produits full stack d'un côté, modèles et agents de l'autre.\n\nEn ce moment, je passe le plus clair de mon temps à construire des agents IA : des systèmes qui utilisent des outils, parlent à des APIs, contrôlent un navigateur, et font vraiment le travail, pas seulement discuter. RAG, MCP, OpenAI, Anthropic, la stack habituelle.\n\nMon travail est sur GitHub : apps, agents et systèmes bout en bout que tu peux lancer, pas des notebooks à moitié finis.\n\nConstruisons quelque chose ensemble."
   },
   "Career": {
     "agileSoftLabs": "AgileSoftLabs",
@@ -21,6 +21,8 @@
     "freeBio": "En tant que développeur web freelance, je conçois et déploie des sites web et des applications SaaS en utilisant la pile MERN avec des flux de travail CI/CD conteneurisés (Docker). Mon travail inclut l'implémentation de l'authentification, des passerelles de paiement et des tableaux de bord de performance, en me concentrant sur une UI/UX réactive et des composants réutilisables."
   },
   "Projects": {
+    "reduckName": "Reduck : Intégration d'agent IA via MCP avec contrôle navigateur en direct",
+    "reduckBio": "Connexion de Claude Code à un serveur MCP tiers pour donner à l'agent le contrôle d'un navigateur en direct — une capacité qu'il n'avait pas nativement. Trois scripts d'automatisation construits via cette connexion, chacun avec un contrat d'entrée/sortie typé. Régression réelle : les trois scripts déjà validés ont échoué ensemble. Cause : l'environnement froid de la plateforme s'ouvrait à une taille de fenêtre inconsistante, ce qui cassait silencieusement une dépendance partagée. Diagnostic à partir des traces d'exécution, correctif, puis re-validation depuis un cold start. Retour structuré à la plateforme : reproduction, cause racine, sévérité, correctif proposé.",
     "codeItName": "CodeIt : Plateforme de collaboration de code en temps réel",
     "codeItBio": "Éditeur de code multi-utilisateurs en temps réel avec synchronisation en direct, suivi des curseurs, salles sécurisées et coloration syntaxique—conçu pour la programmation en binôme à distance et le codage en équipe.",
     "exaName": "Exa : Moteur de recherche assisté par l'IA",

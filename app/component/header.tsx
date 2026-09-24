@@ -80,33 +80,35 @@ export function Header({ name, bio, photo, email }: details) {
                     className="font-medium text-base sm:text-lg leading-relaxed flex-1 space-y-4 text-neutral-300  md:text-left"
                 >
                     <p className="text-xl sm:text-2xl font-bold text-white">
-                        Hey! I&apos;m Navin, and I build intelligent systems.
+                        Hey! I&apos;m Navin, an AI and full stack engineer.
                     </p>
                     <p>
-                        A few years ago, I was deep in the full-stack world like React, Node,
-                        databases, the whole thing. I loved shipping products and solving
-                        problems. But somewhere along the way, I realized the coolest
-                        problems weren&apos;t just about building fast software; they were
-                        about making software <em>think</em>.
-                    </p>
-                    <p>So I made the leap into machine learning.</p>
-                    <p>
-                        For the past 6 months, I&apos;ve been obsessed with deep learning.
-                        I&apos;ve trained models, fine-tuned transformers, and shipped ML
-                        systems to production. Not just theory—real, working systems that
-                        solve real problems.
+                        I build with Python, PyTorch, TypeScript, React, Next.js, FastAPI,
+                        and LangChain. Full stack products on one side, models and agents
+                        on the other.
                     </p>
                     <p>
-                        Now I&apos;m living at the intersection of both worlds. I know how
-                        to build systems that scale, AND I know how to train models that
-                        actually work.
+                        These days I spend most of my time building AI agents: systems that
+                        can use tools, talk to APIs, control a browser, and actually get
+                        work done, not just chat. RAG, MCP, OpenAI, Anthropic, the usual
+                        stack.
                     </p>
                     <p>
-                        You&apos;ll find my projects on GitHub—complete pipelines from data
-                        to deployment. No half-finished experiments, just solid ML work.
+                        You&apos;ll find my work on GitHub: apps, agents, and end to end
+                        systems you can run, not half finished notebooks.
                     </p>
+                    <div className="flex flex-wrap gap-2 pt-1">
+                        {Data.skills.map((skill) => (
+                            <span
+                                key={skill}
+                                className="text-neutral-300 bg-neutral-800/50 border border-neutral-700/50 rounded-lg text-xs px-2.5 py-1"
+                            >
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
                     <p className="text-neutral-600 font-semibold">
-                        Let&apos;s build something intelligent together.
+                        Let&apos;s build something together.
                     </p>
                 </motion.div>
             </div>
