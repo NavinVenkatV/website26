@@ -62,7 +62,7 @@ export function Header({ name, bio, photo, email }: details) {
         >
             <div className="flex flex-col md:flex-row  md:items-start gap-8 md:gap-10 rounded-2xl w-full">
 
-                <motion.div
+                {/* <motion.div
                     variants={fadeInUp}
                     className="flex justify-center items-center shrink-0"
                 >
@@ -73,7 +73,7 @@ export function Header({ name, bio, photo, email }: details) {
                         height={280}
                         className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-2xl border border-red-900/40"
                     />
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     variants={fadeInUp}

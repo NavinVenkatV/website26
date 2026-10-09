@@ -13,6 +13,7 @@ import { Bitcount_Single } from "next/font/google";
 import { useTranslations } from 'next-intl';
 import { motion, cubicBezier } from 'motion/react';
 import ScrollHero from "../component/scroll";
+import Link from "next/link";
 
 const font1 = Bitcount_Single({
   subsets: ['latin'],
@@ -57,6 +58,23 @@ export default function Home() {
         variants={fadeInUp}
         className="mt-2 bg-neutral-950/70 backdrop-blur-2xl mx-2 sm:mx-4 md:mx-6 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:px-12"
       >
+
+        {/* <div className="relative mb-16 mr-3 mt-3 inline-block bg-amber-600">
+          <Link
+            href="/progress"
+            className="inline-block rounded-full border border-white p-3 text-white transition-colors hover:bg-amber-200 hover:text-black sm:p-5 md:p-7"
+          >
+            Progress
+          </Link>
+
+          <span
+            className="pointer-events-none absolute -right-3 -top-3 rounded-full bg-red-500 px-2 py-0.5 font-bold leading-none text-white"
+            style={{ fontSize: 10, color: "#fff" }}
+          >
+            NEW
+          </span>
+        </div> */}
+
         <div className={`${font1.className} p-3 sm:p-5 md:p-7 w-full h-auto rounded-2xl overflow-hidden`}>
           <div className="flex flex-col sm:flex-row justify-between gap-1 sm:gap-0 text-sm sm:text-base text-neutral-400">
             <p>Profile | Navin</p>
