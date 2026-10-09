@@ -58,6 +58,9 @@ export default function Home() {
         variants={fadeInUp}
         className="mt-2 bg-neutral-950/70 backdrop-blur-2xl mx-2 sm:mx-4 md:mx-6 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:px-12"
       >
+        {/* <div className="border border-red-200 bg-red-50 p-3 rounded-xl">
+          <p className="text-red-700 font-semibold">My Progress!!</p>
+        </div> */}
 
         {/* <div className="relative mb-16 mr-3 mt-3 inline-block bg-amber-600">
           <Link

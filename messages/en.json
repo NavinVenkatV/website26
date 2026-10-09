@@ -3,31 +3,37 @@
     "skills": "Skills",
     "career": "Career",
     "careerSubtitle": "Work experiences and roles",
-    "projects": "Projects I Developed..",
+    "projects": "Projects",
     "projectsSubtitle": "What I’ve Built",
     "music": "Wanna hear some music..",
-    "education": "Education"
+    "education": "Education",
+    "progress": "My progress"
   },
   "Header": {
     "greeting": "Hi! I'm {name}",
-    "bio": "Hey! I'm Navin, an AI and full stack engineer.\n\nI build with Python, PyTorch, TypeScript, React, Next.js, FastAPI, and LangChain. Full stack products on one side, models and agents on the other.\n\nThese days I spend most of my time building AI agents: systems that can use tools, talk to APIs, control a browser, and actually get work done, not just chat. RAG, MCP, OpenAI, Anthropic, the usual stack.\n\nYou'll find my work on GitHub: apps, agents, and end to end systems you can run, not half finished notebooks.\n\nLet's build something together."
+    "bio": "Hey! I'm Navin, an AI and full stack engineer, and a final-year M.Sc. student at EPITA Paris looking for a 6-month end-of-studies internship.\n\nI build with Python, PyTorch, TypeScript, React, Next.js, FastAPI, and LangChain. Full stack products on one side, models and agents on the other.\n\nThese days I spend most of my time building AI agents: systems that can use tools, talk to APIs, control a browser, and actually get work done, not just chat. RAG, MCP, OpenAI, Anthropic, the usual stack.\n\nYou'll find my work on GitHub: apps, agents, and end to end systems you can run, not half finished notebooks.\n\nLet's build something together."
+  },
+  "Progress": {
+    "title": "My progress",
+    "subtitle": "What I'm building and learning right now.",
+    "back": "Back"
   },
   "Career": {
-  "agileSoftLabs": "Software Developer Intern @AgileSoftLabs",
-  "agileYear": "July 2024 – May 2025",
-  "agileBio": "Built and maintained scalable REST APIs with Node.js, Express.js and TypeScript, with unit and integration testing (Jest). Migrated the frontend from React.js to Next.js (SSR/SSG), improving performance and SEO. Optimised PostgreSQL and MongoDB schemas to reduce latency on high-traffic endpoints. Set up CI/CD pipelines via GitHub Actions and deployed Docker services on AWS EC2 with production monitoring. Integrated AI tools including Copilot and LLM APIs for code generation, automated review and documentation."
-},
+    "agileSoftLabs": "Software Developer Intern @AgileSoftLabs",
+    "agileYear": "July 2024 – May 2025",
+    "agileBio": "Built and maintained scalable REST APIs with Node.js, Express.js and TypeScript, with unit and integration testing (Jest), in an agile team working directly with clients. Migrated the frontend from React.js to Next.js (SSR/SSG), improving performance and SEO. Optimised PostgreSQL and MongoDB schemas to reduce latency on high-traffic endpoints. Set up CI/CD pipelines via GitHub Actions and deployed Docker services on AWS EC2 with production monitoring. Used Docker, Kubernetes and Redis on client projects. Integrated AI tools including Copilot and LLM APIs for code generation, automated review and documentation."
+  },
   "Projects": {
     "reduckName": "Reduck: MCP Agent Integration with Live Browser Control",
-    "reduckBio": "Connected Claude Code to a third-party MCP server so the agent could control a live browser — a capability it did not have on its own. Built three automation scripts over that connection, each with a typed input and output contract. Traced a production regression where all three previously validated scripts failed together: the platform’s cold environment opened at an inconsistent window size and silently broke a shared downstream dependency. Diagnosed it from run traces, fixed it, and re-validated from a fresh cold start rather than a warm session. Wrote structured platform feedback with reproduction steps, root cause, severity, and a suggested fix.",
+    "reduckBio": "Connected Claude Code to a third-party MCP server so the agent could control a live browser, a capability it did not have on its own. Built three automation scripts over that connection, each with a typed input and output contract. Traced a regression where all three previously validated, already deployed scripts failed together: the platform’s cold environment opened at an inconsistent window size and silently broke a shared downstream dependency. Diagnosed it from run traces, fixed it, and re-validated from a fresh cold start rather than a warm session. Wrote structured platform feedback with reproduction steps, root cause, severity, and a suggested fix.",
     "clairoName": "Clairo: AI Document Intelligence Platform",
-    "clairoBio": "Production-grade RAG system that lets users upload any PDF and ask questions in plain English — every answer comes with an exact page citation and zero hallucination. Built with hybrid BM25 + vector retrieval, Cohere cross-encoder reranking, and a Ragas evaluation pipeline CI-gated in GitHub Actions. Faithfulness improved from 0.61 to 0.89 after reranking. Multi-user architecture with NextAuth Google and X OAuth. Phase 2 adds fully local inference via Ollama with zero data egress.",
+    "clairoBio": "RAG system, built end to end by me, that lets users upload any PDF and ask questions in plain English. Every answer comes with an exact page citation, so it can be checked instead of trusted. Built with hybrid BM25 + vector retrieval, Cohere cross-encoder reranking, and a Ragas evaluation pipeline CI-gated in GitHub Actions. Faithfulness improved from 0.61 to 0.89 after reranking. Multi-user architecture with NextAuth Google and X OAuth. Next: fully local inference via Ollama with zero data egress.",
     "codeItName": "CodeIt: Real-Time Collaborative Code Editor",
-    "codeItBio": "Multi-user collaborative coding platform with real-time synchronisation under 100ms via WebSockets (Socket.IO). Features live cursor tracking, secure room management, and syntax highlighting — built for remote pair programming and team coding sessions. Event-driven scalable architecture using React, Node.js, MongoDB and Tailwind CSS.",
+    "codeItBio": "Multi-user collaborative coding platform, built alone, with real-time synchronisation under 100ms via WebSockets (Socket.IO). Features live cursor tracking, secure room management, and syntax highlighting, built for remote pair programming and team coding sessions. Event-driven scalable architecture using React, Node.js, MongoDB and Tailwind CSS.",
     "exaName": "Exa: AI-Powered Search Engine",
-    "exaBio": "LLM-powered search engine with real-time data retrieval and streaming responses via OpenAI and Anthropic APIs. Delivers concise semantic results beyond keyword matching, with advanced cache optimisation achieving a 95% cache hit rate, serverless deployment on AWS Lambda, and optimised PostgreSQL queries reducing latency by 60%.",
+    "exaBio": "LLM-powered search engine, built alone, with real-time data retrieval and streaming responses via OpenAI and Anthropic APIs. Delivers concise semantic results beyond keyword matching, with advanced cache optimisation achieving a 95% cache hit rate, serverless deployment on AWS Lambda, and optimised PostgreSQL queries reducing latency by 60%.",
     "pingMeName": "PingMe: Uptime Monitoring SaaS",
-    "pingMeBio": "Subscription-based website monitoring platform with real-time uptime pings, automated downtime email alerts via NodeMailer, performance metrics dashboards, and tiered subscription plans. Built with Node.js, TypeScript, Bull Queue for distributed async job processing, PostgreSQL and Prisma ORM — deployed on AWS EC2 with GitHub Actions CI/CD and 99.9% uptime."
+    "pingMeBio": "Subscription-based website monitoring platform, built and operated alone, with real-time uptime pings, automated downtime email alerts via NodeMailer, performance metrics dashboards, and tiered subscription plans. Built with Node.js, TypeScript, Bull Queue for distributed async job processing, PostgreSQL and Prisma ORM, deployed on AWS EC2 with GitHub Actions CI/CD and 99.9% uptime."
   },
   "Education": {
     "school": "EPITA, l'école des ingénieurs en intelligence informatique",
