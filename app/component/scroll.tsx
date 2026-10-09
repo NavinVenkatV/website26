@@ -69,7 +69,7 @@ export default function ScrollHero() {
 
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <motion.img
-          src="/background.webp"
+          src="/bg.png"
           alt=""
           fetchPriority="high"
           loading="eager"
@@ -92,7 +92,7 @@ export default function ScrollHero() {
           >
             <motion.div style={{ opacity: nameOpacity, filter: nameFilter }}>
               <h1 className={`${font3.className} text-6xl sm:text-8xl font-semibold tracking-tight text-white`}>
-                Hi! I&apos;m Navin
+                Helloww!!! I&apos;m Navin
               </h1>
               <p className={`${font3.className} text-white text-xl sm:text-2xl mt-3 tracking-wide`}>
                 AI/ML &nbsp;|&nbsp; Full Stack &nbsp;|&nbsp; Music
