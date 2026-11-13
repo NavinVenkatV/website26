@@ -21,7 +21,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           <h3 className="font-serif text-3xl leading-tight sm:text-4xl">
             {project.name}
             <span className="text-dim"> · </span>
-            <em className="text-mute">{pick(project.tagline, locale)}</em>
+            <span className="text-mute">{pick(project.tagline, locale)}</span>
           </h3>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-wider text-dim">
             {pick(project.category, locale)}

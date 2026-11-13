@@ -171,7 +171,7 @@ export const projects: Project[] = [
     slug: "hexavia",
     name: "Pépite · Hexavia",
     latest: true,
-    accent: "#ffd400",
+    accent: "#ffffff",
     image: "/hexavia.png",
     tagline: {
       en: "AI-assisted idea triage for an innovation challenge, built for INSKIP",
@@ -227,7 +227,7 @@ export const projects: Project[] = [
   {
     slug: "reduck",
     name: "Reduck",
-    accent: "#1d9bf0",
+    accent: "#ffffff",
     tagline: {
       en: "MCP agent integration with live browser control",
       fr: "Intégration d’agent via MCP avec contrôle de navigateur en direct",
@@ -279,7 +279,7 @@ export const projects: Project[] = [
   {
     slug: "clairo",
     name: "Clairo",
-    accent: "#7856ff",
+    accent: "#ffffff",
     image: "/clairo.png",
     tagline: { en: "AI document intelligence platform", fr: "Plateforme d’intelligence documentaire par IA" },
     category: { en: "RAG · LLM Evaluation", fr: "RAG · Évaluation de LLM" },
@@ -321,7 +321,7 @@ export const projects: Project[] = [
   {
     slug: "exa",
     name: "Exa",
-    accent: "#00ba7c",
+    accent: "#ffffff",
     image: "/exaai.png",
     tagline: { en: "AI-powered search engine", fr: "Moteur de recherche propulsé par l’IA" },
     category: { en: "LLM · Search", fr: "LLM · Recherche" },
@@ -359,7 +359,7 @@ export const projects: Project[] = [
   {
     slug: "codeit",
     name: "CodeIt",
-    accent: "#f91880",
+    accent: "#ffffff",
     image: "/codeit.png",
     tagline: { en: "Real-time collaborative code editor", fr: "Éditeur de code collaboratif en temps réel" },
     category: { en: "Realtime · Full-stack", fr: "Temps réel · Full-stack" },
@@ -397,7 +397,7 @@ export const projects: Project[] = [
   {
     slug: "pingme",
     name: "PingMe",
-    accent: "#ff7a00",
+    accent: "#ffffff",
     image: "/pingme.png",
     tagline: { en: "Uptime monitoring SaaS", fr: "SaaS de surveillance de disponibilité" },
     category: { en: "SaaS · Infrastructure", fr: "SaaS · Infrastructure" },

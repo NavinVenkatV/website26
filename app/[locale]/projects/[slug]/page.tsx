@@ -61,7 +61,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
           <span style={{ color: p.accent }}>.</span>
         </h1>
         <Reveal delay={0.3}>
-          <p className="mt-6 max-w-3xl font-serif text-3xl italic leading-snug text-paper/80 sm:text-4xl">
+          <p className="mt-6 max-w-3xl font-serif text-3xl leading-snug text-paper/80 sm:text-4xl">
             {pick(p.tagline, locale)}
           </p>
         </Reveal>
@@ -133,7 +133,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
                   className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full blur-[90px]"
                   style={{ background: `${p.accent}33` }}
                 />
-                <h2 className="relative font-serif text-4xl italic">{pick(p.challenge.title, locale)}</h2>
+                <h2 className="relative font-serif text-4xl">{pick(p.challenge.title, locale)}</h2>
                 <p className="relative mt-5 text-lg leading-relaxed text-paper/85">{pick(p.challenge.body, locale)}</p>
               </div>
             </Reveal>
@@ -156,7 +156,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
           {p.next && (
             <Reveal>
               <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-mute">{t("nextStep")}</h2>
-              <p className="mt-4 font-serif text-3xl italic leading-snug">{pick(p.next, locale)}</p>
+              <p className="mt-4 font-serif text-3xl leading-snug">{pick(p.next, locale)}</p>
             </Reveal>
           )}
         </div>
@@ -191,7 +191,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
           <div className="mt-4 flex items-end justify-between gap-6">
             <p className="font-serif text-6xl leading-none transition-transform duration-500 group-hover:translate-x-3 sm:text-8xl">
               {next.name}
-              <em className="block text-2xl text-mute sm:text-3xl">{pick(next.tagline, locale)}</em>
+              <span className="block text-2xl text-mute sm:text-3xl">{pick(next.tagline, locale)}</span>
             </p>
             <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-line-2 transition-all duration-500 group-hover:rotate-45 group-hover:bg-paper group-hover:text-ink">
               <FiArrowUpRight className="h-6 w-6" />

@@ -5,11 +5,11 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import { setScrollLocked } from "./smooth-scroll";
 
 const QUOTES = [
-  { text: "Simplicity is the soul of efficiency.", by: "Austin Freeman" },
-  { text: "Make it work, make it right, make it fast.", by: "Kent Beck" },
-  { text: "The best way to predict the future is to invent it.", by: "Alan Kay" },
-  { text: "Talk is cheap. Show me the code.", by: "Linus Torvalds" },
-  { text: "First, solve the problem. Then, write the code.", by: "John Johnson" },
+  { text: "Believe in your flyness, conquer your shyness.", by: "Ye" },
+  { text: "Everything I'm not made me everything I am.", by: "Ye" },
+  { text: "Reach for the stars so if you fall you land on a cloud.", by: "Ye" },
+  { text: "I refuse to accept other people's ideas of happiness for me.", by: "Ye" },
+  { text: "No one man should have all that power.", by: "Ye" },
 ];
 
 const ease = [0.76, 0, 0.24, 1] as const;
@@ -73,7 +73,16 @@ export function IntroLoader() {
               exit={{ opacity: 0, y: -40 }}
               transition={{ duration: 0.5, ease }}
             >
-              <blockquote className="font-serif text-4xl italic leading-tight text-paper sm:text-6xl">
+              <motion.div
+                aria-hidden
+                className="mx-auto mb-10 flex w-fit items-center justify-center border border-paper/80 px-3 py-1 font-sans text-2xl font-semibold leading-none tracking-[0.25em] text-paper sm:text-3xl"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, ease }}
+              >
+                Y<span className="-mr-[0.25em]">E</span>
+              </motion.div>
+              <blockquote className="font-serif text-4xl leading-tight text-paper sm:text-6xl">
                 {words.map((w, i) => (
                   <span key={i} className="inline-block overflow-hidden pb-1 align-bottom">
                     <motion.span

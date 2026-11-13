@@ -97,8 +97,8 @@ export function Nav() {
       >
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
           <Link href="/" className="group flex items-center gap-3" aria-label={t("home")}>
-            <LogoMark className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
-            <span className="text-[17px] font-bold leading-none tracking-tight">Navin Venkat</span>
+            <LogoMark className="h-6 w-6 transition-transform duration-500 group-hover:rotate-[-12deg]" />
+            <span className="text-lg font-medium leading-none tracking-tight">Navin Venkat</span>
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">

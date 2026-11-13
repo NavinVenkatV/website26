@@ -62,7 +62,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                       </span>
                     )}
                   </div>
-                  <p className="mt-4 font-serif text-2xl italic text-mute">{pick(p.tagline, locale)}</p>
+                  <p className="mt-4 font-serif text-2xl text-mute">{pick(p.tagline, locale)}</p>
                   <p className="mt-5 max-w-lg leading-relaxed text-paper/75">{pick(p.summary, locale)}</p>
                 </div>
                 <div>

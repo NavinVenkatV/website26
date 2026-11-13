@@ -41,13 +41,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* ============================ HERO ============================ */}
       <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden px-5 pb-10 pt-28 sm:px-8">
         <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-40 top-10 h-[520px] w-[520px] rounded-full bg-ember/10 blur-[140px]" />
-          <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-[#7856ff]/[0.06] blur-[140px]" />
+          <div className="absolute -left-40 top-10 h-[520px] w-[520px] rounded-full bg-white/[0.06] blur-[140px]" />
+          <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-white/[0.03] blur-[140px]" />
           <div
             className="absolute inset-0 opacity-[0.35]"
             style={{
               backgroundImage:
-                "linear-gradient(to right, rgb(231 233 234 / 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgb(231 233 234 / 0.04) 1px, transparent 1px)",
+                "linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px)",
               backgroundSize: "88px 88px",
               maskImage: "radial-gradient(ellipse at 30% 40%, black 10%, transparent 70%)",
             }}
@@ -65,7 +65,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
           <h1 className="font-serif text-[23vw] leading-[0.82] tracking-[-0.03em] sm:text-[19vw] lg:text-[15.5rem]">
             <RiseText text={profile.firstName} className="block" />
-            <span className="block pl-[8vw] italic text-paper/90 lg:pl-40">
+            <span className="block pl-[8vw] text-paper/50 lg:pl-40">
               <RiseText text={profile.lastName} delay={0.15} />
               <span className="text-ember">.</span>
             </span>
@@ -79,7 +79,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
             <Reveal delay={0.65} className="flex flex-col gap-5 md:items-end">
               <span className="inline-flex items-center gap-3 rounded-full border border-line-2 bg-ink-2/60 px-4 py-2 text-sm text-paper/90 backdrop-blur">
-                <span className="pulse-dot relative h-2 w-2 rounded-full bg-[#00ba7c]" />
+                <span className="pulse-dot relative h-2 w-2 rounded-full bg-paper" />
                 {pick(profile.status, locale)}
               </span>
               <div className="flex flex-wrap gap-3">
@@ -109,12 +109,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       {/* ========================== MARQUEE ========================== */}
       <div className="relative overflow-hidden py-10">
-        <div className="marquee -rotate-2 scale-105 overflow-hidden bg-ember py-4 text-white sm:py-5">
-          <div className="marquee-track flex w-max gap-10 whitespace-nowrap font-serif text-4xl italic sm:text-6xl">
+        <div className="marquee soft-rule overflow-hidden py-6 text-paper sm:py-8">
+          <div className="marquee-track flex w-max gap-10 whitespace-nowrap font-serif text-4xl sm:text-6xl">
             {[...headlineWords, ...headlineWords].map((s, i) => (
               <span key={i} className="flex items-center gap-10">
                 {s}
-                <span className="text-xl not-italic sm:text-2xl">✦</span>
+                <span className="text-xl text-dim sm:text-2xl">✦</span>
               </span>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     <span className="h-1.5 w-1.5 rounded-full bg-ember" />
                     {t("Projects.latest")} · {pick(latest.category, locale)}
                   </span>
-                  <h3 className="mt-6 font-serif text-4xl italic leading-tight sm:text-5xl">
+                  <h3 className="mt-6 font-serif text-4xl leading-tight sm:text-5xl">
                     {pick(latest.tagline, locale)}
                   </h3>
                   <p className="mt-6 max-w-lg text-lg leading-relaxed text-mute">{pick(latest.summary, locale)}</p>
@@ -316,7 +316,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <div className="flex-1">
                 <h3 className="font-serif text-3xl sm:text-4xl">{pick(e.degree, locale)}</h3>
                 <p className="mt-1 text-mute">
-                  {e.school} · <em>{e.schoolLong}</em>
+                  {e.school} · {e.schoolLong}
                 </p>
               </div>
               <div className="font-mono text-xs uppercase tracking-wider text-mute sm:text-right">
@@ -339,7 +339,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </div>
             <iframe
               title="Spotify"
-              src="https://open.spotify.com/embed/track/4ipD5CMmWkehabGlAGTOBB?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/track/22L7bfCiAkJo5xGSQgmiIO?utm_source=generator&theme=0"
               width="100%"
               height="352"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

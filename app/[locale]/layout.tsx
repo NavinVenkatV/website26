@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, JetBrains_Mono, Manrope } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,14 +10,10 @@ import { IntroLoader } from "../component/intro-loader";
 import { SmoothScroll } from "../component/smooth-scroll";
 import "../globals.css";         
 
-const geist = Manrope({ variable: "--font-geist", subsets: ["latin"] });
-const geistMono = JetBrains_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const instrument = Fraunces({
-  variable: "--font-instrument",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["SOFT", "opsz"],
-});
+const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+// Display face: same geometric sans, set light and tight (see .font-serif in globals.css)
+const instrument = Geist({ variable: "--font-instrument", subsets: ["latin"] });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

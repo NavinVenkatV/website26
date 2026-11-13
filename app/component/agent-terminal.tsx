@@ -18,22 +18,22 @@ const LINES: Line[] = [
 const color: Record<Line["kind"], string> = {
   cmd: "text-paper",
   info: "text-mute",
-  ok: "text-[#00ba7c]",
-  err: "text-[#f4212e]",
+  ok: "text-paper/70",
+  err: "text-ember",
   fix: "text-paper",
 };
 
 export function AgentTerminal({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl border border-line-2 bg-[#000000] shadow-2xl shadow-black/60">
+    <div className="relative h-full w-full overflow-hidden rounded-2xl border border-line-2 bg-[#050505] shadow-2xl shadow-black/60">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-ember/15 blur-[90px]"
+        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/[0.07] blur-[90px]"
       />
       <div className="relative flex items-center gap-2 border-b border-line px-4 py-3">
-        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]/80" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]/80" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+        <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
+        <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
         <span className="ml-3 font-mono text-[11px] text-dim">reduck · agent trace</span>
       </div>
       <motion.ol
