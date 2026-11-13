@@ -29,7 +29,7 @@ export function ProjectVisual({
         aria-hidden
         className="absolute inset-0"
         style={{
-          background: `linear-gradient(180deg, transparent 45%, rgb(0 0 0 / 0.75) 100%)`,
+          background: `linear-gradient(180deg, transparent 45%, rgb(10 4 5 / 0.75) 100%)`,
           boxShadow: "inset 0 1px 0 0 rgb(255 255 255 / 0.08)",
         }}
       />

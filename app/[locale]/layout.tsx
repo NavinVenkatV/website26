@@ -47,7 +47,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}>
-      <body className="min-h-screen bg-ink font-sans text-paper">
+      <body className="min-h-screen font-sans text-paper">
         <NextIntlClientProvider>
           <IntroLoader />
           <SmoothScroll />

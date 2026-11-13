@@ -25,10 +25,10 @@ const color: Record<Line["kind"], string> = {
 
 export function AgentTerminal({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl border border-line-2 bg-[#050505] shadow-2xl shadow-black/60">
+    <div className="relative h-full w-full overflow-hidden rounded-2xl border border-line-2 bg-[#0d0506] shadow-2xl shadow-black/60">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/[0.07] blur-[90px]"
+        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-ember/25 blur-[90px]"
       />
       <div className="relative flex items-center gap-2 border-b border-line px-4 py-3">
         <span className="h-2.5 w-2.5 rounded-full bg-white/30" />

@@ -23,8 +23,8 @@ export function Reveal({
   return (
     <Comp
       className={className}
-      initial={{ opacity: 0, y, filter: "blur(8px)" }}
-      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      initial={{ opacity: 0, y }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.8, delay: introDone ? delay : delay + INTRO_SECONDS, ease }}
     >

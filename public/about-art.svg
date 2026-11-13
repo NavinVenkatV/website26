@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
   <defs>
     <radialGradient id="bg" cx="38%" cy="42%" r="80%">
-      <stop offset="0" stop-color="#1c1c1c"/>
-      <stop offset="0.45" stop-color="#0a0a0a"/>
-      <stop offset="1" stop-color="#000000"/>
+      <stop offset="0" stop-color="#3a0a10"/>
+      <stop offset="0.45" stop-color="#140709"/>
+      <stop offset="1" stop-color="#0a0405"/>
     </radialGradient>
     <radialGradient id="core" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.35" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ff8a95"/>
+      <stop offset="0.35" stop-color="#d7263d"/>
+      <stop offset="1" stop-color="#d7263d" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="cool" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8a0f20" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#8a0f20" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+      <path d="M50 0H0V50" fill="none" stroke="#f3e7e5" stroke-opacity="0.05"/>
     </pattern>
     <filter id="blur"><feGaussianBlur stdDeviation="40"/></filter>
   </defs>
@@ -23,9 +23,9 @@
   <rect width="800" height="1000" fill="url(#bg)"/>
   <rect width="800" height="1000" fill="url(#grid)"/>
   <circle cx="640" cy="820" r="260" fill="url(#cool)"/>
-  <circle cx="380" cy="460" r="230" fill="#ffffff" opacity="0.08" filter="url(#blur)"/>
+  <circle cx="380" cy="460" r="230" fill="#d7263d" opacity="0.2" filter="url(#blur)"/>
 
-  <g fill="none" stroke="#ffffff">
+  <g fill="none" stroke="#f3e7e5">
     <circle cx="380" cy="460" r="120" stroke-opacity="0.16"/>
     <circle cx="380" cy="460" r="210" stroke-opacity="0.11" stroke-dasharray="2 8"/>
     <circle cx="380" cy="460" r="310" stroke-opacity="0.08"/>
@@ -33,53 +33,53 @@
   </g>
 
   <g fill="none" stroke-linecap="round">
-    <path d="M380 460 C 300 360, 220 330, 150 250" stroke="#ffffff" stroke-opacity="0.7" stroke-width="2"/>
-    <path d="M380 460 C 470 380, 540 300, 620 220" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
-    <path d="M380 460 C 520 480, 600 560, 650 680" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
-    <path d="M380 460 C 300 560, 230 640, 170 760" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
-    <path d="M380 460 C 400 600, 420 720, 440 860" stroke="#a3a3a3" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 7"/>
-    <path d="M150 250 C 300 200, 470 190, 620 220" stroke="#ffffff" stroke-opacity="0.14"/>
-    <path d="M620 220 C 690 380, 700 520, 650 680" stroke="#ffffff" stroke-opacity="0.14"/>
-    <path d="M170 760 C 280 830, 360 860, 440 860" stroke="#ffffff" stroke-opacity="0.14"/>
-    <path d="M440 860 C 540 820, 610 760, 650 680" stroke="#ffffff" stroke-opacity="0.14"/>
-    <path d="M150 250 C 100 420, 110 600, 170 760" stroke="#ffffff" stroke-opacity="0.1"/>
+    <path d="M380 460 C 300 360, 220 330, 150 250" stroke="#d7263d" stroke-opacity="0.8" stroke-width="2"/>
+    <path d="M380 460 C 470 380, 540 300, 620 220" stroke="#f3e7e5" stroke-opacity="0.35" stroke-width="1.5"/>
+    <path d="M380 460 C 520 480, 600 560, 650 680" stroke="#d7263d" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M380 460 C 300 560, 230 640, 170 760" stroke="#f3e7e5" stroke-opacity="0.3" stroke-width="1.5"/>
+    <path d="M380 460 C 400 600, 420 720, 440 860" stroke="#f2c1b6" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 7"/>
+    <path d="M150 250 C 300 200, 470 190, 620 220" stroke="#f3e7e5" stroke-opacity="0.14"/>
+    <path d="M620 220 C 690 380, 700 520, 650 680" stroke="#f3e7e5" stroke-opacity="0.14"/>
+    <path d="M170 760 C 280 830, 360 860, 440 860" stroke="#f3e7e5" stroke-opacity="0.14"/>
+    <path d="M440 860 C 540 820, 610 760, 650 680" stroke="#f3e7e5" stroke-opacity="0.14"/>
+    <path d="M150 250 C 100 420, 110 600, 170 760" stroke="#f3e7e5" stroke-opacity="0.1"/>
   </g>
 
   <circle cx="380" cy="460" r="90" fill="url(#core)"/>
-  <circle cx="380" cy="460" r="26" fill="#ffffff"/>
-  <circle cx="380" cy="460" r="10" fill="#ffffff"/>
+  <circle cx="380" cy="460" r="26" fill="#d7263d"/>
+  <circle cx="380" cy="460" r="10" fill="#fff0f0"/>
 
   <g>
-    <circle cx="150" cy="250" r="12" fill="#000000" stroke="#ffffff" stroke-width="2"/>
-    <circle cx="150" cy="250" r="4" fill="#ffffff"/>
-    <circle cx="620" cy="220" r="10" fill="#000000" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2"/>
-    <circle cx="650" cy="680" r="12" fill="#000000" stroke="#ffffff" stroke-width="2"/>
-    <circle cx="650" cy="680" r="4" fill="#ffffff"/>
-    <circle cx="170" cy="760" r="10" fill="#000000" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2"/>
-    <circle cx="440" cy="860" r="10" fill="#000000" stroke="#a3a3a3" stroke-width="2"/>
-    <circle cx="440" cy="860" r="3.5" fill="#a3a3a3"/>
+    <circle cx="150" cy="250" r="12" fill="#0a0405" stroke="#d7263d" stroke-width="2"/>
+    <circle cx="150" cy="250" r="4" fill="#d7263d"/>
+    <circle cx="620" cy="220" r="10" fill="#0a0405" stroke="#f3e7e5" stroke-opacity="0.6" stroke-width="2"/>
+    <circle cx="650" cy="680" r="12" fill="#0a0405" stroke="#d7263d" stroke-width="2"/>
+    <circle cx="650" cy="680" r="4" fill="#d7263d"/>
+    <circle cx="170" cy="760" r="10" fill="#0a0405" stroke="#f3e7e5" stroke-opacity="0.6" stroke-width="2"/>
+    <circle cx="440" cy="860" r="10" fill="#0a0405" stroke="#f2c1b6" stroke-width="2"/>
+    <circle cx="440" cy="860" r="3.5" fill="#f2c1b6"/>
   </g>
 
-  <g fill="#ffffff">
+  <g fill="#ff8a95">
     <circle cx="262" cy="335" r="3"/>
-    <circle cx="512" cy="356" r="2.5" fill="#ffffff"/>
+    <circle cx="512" cy="356" r="2.5" fill="#f3e7e5"/>
     <circle cx="566" cy="561" r="3"/>
-    <circle cx="262" cy="640" r="2.5" fill="#ffffff"/>
-    <circle cx="411" cy="680" r="2.5" fill="#a3a3a3"/>
+    <circle cx="262" cy="640" r="2.5" fill="#f3e7e5"/>
+    <circle cx="411" cy="680" r="2.5" fill="#f2c1b6"/>
   </g>
 
-  <g fill="#ffffff" fill-opacity="0.35">
+  <g fill="#f3e7e5" fill-opacity="0.35">
     <circle cx="80" cy="90" r="1.5"/><circle cx="260" cy="130" r="1"/><circle cx="720" cy="110" r="1.5"/>
     <circle cx="740" cy="420" r="1"/><circle cx="60" cy="520" r="1"/><circle cx="560" cy="930" r="1.5"/>
     <circle cx="90" cy="920" r="1"/><circle cx="700" cy="900" r="1"/><circle cx="480" cy="110" r="1"/>
   </g>
 
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2" fill="#ffffff">
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2" fill="#f3e7e5">
     <text x="172" y="236" fill-opacity="0.55">TOOLS</text>
     <text x="560" y="196" fill-opacity="0.4">BROWSER</text>
     <text x="672" y="672" fill-opacity="0.55">RAG</text>
     <text x="60" y="790" fill-opacity="0.4">MCP</text>
-    <text x="462" y="890" fill-opacity="0.55" fill="#a3a3a3">SHIP</text>
+    <text x="462" y="890" fill-opacity="0.55" fill="#f2c1b6">SHIP</text>
     <text x="40" y="60" fill-opacity="0.3" font-size="13">AGENT.GRAPH / 01</text>
     <text x="760" y="970" fill-opacity="0.3" font-size="13" text-anchor="end">PARIS · 48.85°N</text>
   </g>

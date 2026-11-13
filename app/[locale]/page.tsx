@@ -41,13 +41,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* ============================ HERO ============================ */}
       <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden px-5 pb-10 pt-28 sm:px-8">
         <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-40 top-10 h-[520px] w-[520px] rounded-full bg-white/[0.06] blur-[140px]" />
-          <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-white/[0.03] blur-[140px]" />
+          <div className="absolute -left-40 top-10 h-[520px] w-[520px] rounded-full bg-ember/25 blur-[140px]" />
+          <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-[#6b0a16]/30 blur-[140px]" />
           <div
             className="absolute inset-0 opacity-[0.35]"
             style={{
               backgroundImage:
-                "linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px)",
+                "linear-gradient(to right, rgb(243 231 229 / 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgb(243 231 229 / 0.05) 1px, transparent 1px)",
               backgroundSize: "88px 88px",
               maskImage: "radial-gradient(ellipse at 30% 40%, black 10%, transparent 70%)",
             }}
@@ -78,7 +78,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </p>
             </Reveal>
             <Reveal delay={0.65} className="flex flex-col gap-5 md:items-end">
-              <span className="inline-flex items-center gap-3 rounded-full border border-line-2 bg-ink-2/60 px-4 py-2 text-sm text-paper/90 backdrop-blur">
+              <span className="inline-flex items-center gap-3 rounded-full border border-line-2 bg-ink-2/80 px-4 py-2 text-sm text-paper/90">
                 <span className="pulse-dot relative h-2 w-2 rounded-full bg-paper" />
                 {pick(profile.status, locale)}
               </span>
@@ -114,7 +114,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             {[...headlineWords, ...headlineWords].map((s, i) => (
               <span key={i} className="flex items-center gap-10">
                 {s}
-                <span className="text-xl text-dim sm:text-2xl">✦</span>
+                <span className="text-xl text-ember sm:text-2xl">✦</span>
               </span>
             ))}
           </div>

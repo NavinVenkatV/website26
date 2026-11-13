@@ -31,7 +31,7 @@ export function Footer() {
     <footer id="contact" className="relative mt-32 overflow-hidden border-t border-line">
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-1/2 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-white/[0.06] blur-[140px]"
+        className="pointer-events-none absolute -bottom-1/2 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-ember/20 blur-[140px]"
       />
       <div className="relative mx-auto max-w-7xl px-5 pb-10 pt-24 sm:px-8 sm:pt-32">
         <Reveal>
