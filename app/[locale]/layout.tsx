@@ -8,7 +8,7 @@ import { Nav } from "../component/nav";
 import { Footer } from "../component/footer";
 import { IntroLoader } from "../component/intro-loader";
 import { SmoothScroll } from "../component/smooth-scroll";
-// import "../globals.css";         
+import "../globals.css";         
 
 const geist = Manrope({ variable: "--font-geist", subsets: ["latin"] });
 const geistMono = JetBrains_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
