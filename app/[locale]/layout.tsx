@@ -1,78 +1,64 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Slab, Dancing_Script, Cinzel, Roboto } from "next/font/google";
-import "../globals.css";
-import { Space_Grotesk } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { routing } from '../../i18n/routing';
+import { Fraunces, JetBrains_Mono, Manrope } from "next/font/google";
+import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { routing } from "../../i18n/routing";
+import { Nav } from "../component/nav";
+import { Footer } from "../component/footer";
+import { IntroLoader } from "../component/intro-loader";
+import { SmoothScroll } from "../component/smooth-scroll";
+// import "../globals.css";         
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geist = Manrope({ variable: "--font-geist", subsets: ["latin"] });
+const geistMono = JetBrains_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const instrument = Fraunces({
+  variable: "--font-instrument",
   subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["SOFT", "opsz"],
 });
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
-const cinzel = Cinzel({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
-
-const dancingScript = Dancing_Script({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
-const robotoSlab = Roboto_Slab({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],      // specify subset
-  weight: ['400', '500', '700'],  // optional weights you need
-  display: 'swap',         // optional, recommended for performance
-});
-
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Navin Venkat's Portfolio",
-  description: "Full Stack Developer | AI/ML Enthusiast | Web3 Explorer",
-};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: { languages: { en: "/en", fr: "/fr" } },
+    openGraph: { title: t("title"), description: t("description"), images: ["/image.jpg"] },
+  };
+}
+
+export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages();
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${spaceGrotesk.className}`}
-      >
-        <NextIntlClientProvider messages={messages}>
-          {/* <LanguageSwitcher /> */}
-          {/* <Theader/> */}
+    <html lang={locale} className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}>
+      <body className="min-h-screen bg-ink font-sans text-paper">
+        <NextIntlClientProvider>
+          <IntroLoader />
+          <SmoothScroll />
+          <div className="grain" aria-hidden />
+          <Nav />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
