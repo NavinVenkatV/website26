@@ -2,7 +2,8 @@
   "Meta": {
     "title": "Navin Venkat | AI & Full-Stack Engineer",
     "description": "Navin Venkat builds AI agents and full-stack products. M.Sc. Computer Science student at EPITA Paris, open to a 6-month end-of-studies internship.",
-    "projectsTitle": "Projects | Navin Venkat"
+    "projectsTitle": "Projects | Navin Venkat",
+    "learningTitle": "Learning | Navin Venkat"
   },
   "Nav": {
     "work": "Work",
@@ -11,7 +12,8 @@
     "contact": "Contact",
     "language": "Language",
     "home": "Home",
-    "local": "Paris"
+    "local": "Paris",
+    "learning": "Learning"
   },
   "Hero": {
     "eyebrow": "Portfolio · 2026",
@@ -80,5 +82,26 @@
   "Footer": {
     "rights": "Designed & built by Navin Venkat.",
     "top": "Back to top"
+  },
+  "Readings": {
+    "label": "Readings",
+    "title": "What I’m learning",
+    "now": "Now",
+    "class": "Class {n} of {total}",
+    "readings": "This class’s readings",
+    "cta": "See all my learnings",
+    "course": "Course site"
+  },
+  "Learning": {
+    "label": "Currently learning",
+    "title": "Learning",
+    "subtitle": "I’m taking Stanford’s Engineering AI Agents. Here is where I am, and what I’m reading along the way.",
+    "done": "Done",
+    "current": "Now",
+    "next": "Up next",
+    "readings": "Readings",
+    "slides": "Slides",
+    "video": "Video",
+    "progress": "{n} of {total} classes"
   }
 }

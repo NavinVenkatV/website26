@@ -3,8 +3,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FiArrowDownRight, FiArrowUpRight } from "react-icons/fi";
 import { Link } from "../../i18n/routing";
 import {
+  currentCourseClass,
   education,
   experience,
+  learning,
   links,
   pick,
   profile,
@@ -327,9 +329,79 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           ))}
         </section>
 
+        {/* =========================== READINGS ========================= */}
+        <section id="readings" className="scroll-mt-24 pt-32">
+          <SectionHead index="07" label={t("Readings.label")} title={t("Readings.title")} />
+          <Reveal className="grid gap-10 rounded-3xl border border-line bg-ink-2/50 p-6 sm:p-8 lg:grid-cols-[1fr_1.2fr] lg:gap-14">
+            <div className="flex flex-col justify-between gap-10">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-ember/15 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-ember">
+                  <span className="h-1.5 w-1.5 rounded-full bg-ember" />
+                  {t("Readings.now")} · {learning.school} {learning.code}
+                </span>
+                <h3 className="mt-6 font-serif text-4xl leading-tight sm:text-5xl">{learning.name}</h3>
+                <p className="mt-4 max-w-md leading-relaxed text-mute">{pick(learning.about, locale)}</p>
+              </div>
+              <div>
+                <div className="flex items-baseline justify-between font-mono text-xs uppercase tracking-wider text-mute">
+                  <span>{t("Readings.class", { n: learning.currentClass, total: learning.totalClasses })}</span>
+                  <span>{learning.term}</span>
+                </div>
+                <div className="mt-3 h-1 overflow-hidden rounded-full bg-line">
+                  <div
+                    className="h-full rounded-full bg-ember"
+                    style={{ width: `${(learning.currentClass / learning.totalClasses) * 100}%` }}
+                  />
+                </div>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link
+                    href="/learning"
+                    className="group inline-flex items-center gap-2 rounded-full bg-paper px-6 py-3 text-sm font-medium text-ink transition-transform hover:scale-[1.03]"
+                  >
+                    {t("Readings.cta")}
+                    <FiArrowUpRight className="transition-transform group-hover:rotate-45" />
+                  </Link>
+                  <a
+                    href={learning.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-line-2 px-6 py-3 text-sm transition-colors hover:border-paper/40"
+                  >
+                    {t("Readings.course")}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-dim">
+                <span className="text-ember">{String(currentCourseClass().n).padStart(2, "0")}</span> · {currentCourseClass().title}
+              </p>
+              <p className="mt-2 text-sm text-mute">{t("Readings.readings")}</p>
+              <ul className="mt-6 divide-y divide-line border-y border-line">
+                {currentCourseClass().readings.map((r) => (
+                  <li key={r.href}>
+                    <a
+                      href={r.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-start justify-between gap-6 py-5"
+                    >
+                      <span>
+                        <span className="block text-lg leading-snug transition-colors group-hover:text-ember">{r.title}</span>
+                        <span className="mt-1 block font-mono text-[11px] uppercase tracking-wider text-dim">{r.source}</span>
+                      </span>
+                      <FiArrowUpRight className="mt-1 shrink-0 text-mute transition-transform group-hover:rotate-45 group-hover:text-ember" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </section>
+
         {/* ============================ MUSIC =========================== */}
         <section className="pt-32">
-          <SectionHead index="07" label={t("Music.label")} title={t("Music.title")} />
+          <SectionHead index="08" label={t("Music.label")} title={t("Music.title")} />
           <Reveal className="grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
             <div>
               <p className="max-w-md text-xl leading-relaxed text-mute">{t("Music.body")}</p>

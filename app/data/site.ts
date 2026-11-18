@@ -435,3 +435,86 @@ export const projects: Project[] = [
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
+
+/* ------------------------------------------------------------------ */
+/* Learning: course I'm currently taking                              */
+/* To update: bump `currentClass`, and add the next class below.       */
+/* ------------------------------------------------------------------ */
+
+export type Reading = { title: string; source: string; href: string };
+export type CourseClass = {
+  n: number;
+  date: string;
+  title: string;
+  summary: L;
+  slides: string;
+  video: string;
+  readings: Reading[];
+};
+
+export const learning = {
+  code: "CS329Z",
+  name: "Engineering AI Agents",
+  school: "Stanford",
+  term: "Fall 2026",
+  href: "https://cs329z.stanford.edu",
+  totalClasses: 20,
+  currentClass: 2,
+  about: {
+    en: "From simple LLM pipelines to compound AI systems and autonomous agents: building RAG, tool use and agent loops from scratch, then frameworks like DSPy, data, evaluation and safety.",
+    fr: "Des pipelines LLM simples aux systèmes d’IA composés et aux agents autonomes : RAG, usage d’outils et boucles d’agent construits from scratch, puis frameworks comme DSPy, données, évaluation et sécurité.",
+  } as L,
+  classes: [
+    {
+      n: 1,
+      date: "Sep 23",
+      title: "Introduction: What Are Agentic Systems?",
+      summary: {
+        en: "A brief history of agents and their anatomy: LLM core, reasoning, memory, tools and environment. Compound AI systems, workflows vs. agents, and the challenges of reliability, safety and evaluation.",
+        fr: "Une brève histoire des agents et leur anatomie : cœur LLM, raisonnement, mémoire, outils et environnement. Systèmes d’IA composés, workflows vs agents, et les défis de fiabilité, sécurité et évaluation.",
+      },
+      slides: "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
+      video: "https://youtu.be/DGI4vucR71w",
+      readings: [
+        { title: "The Shift from Models to Compound AI Systems", source: "Zaharia et al. · BAIR Blog, 2024", href: "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/" },
+        { title: "LLM Powered Autonomous Agents", source: "Weng · Lil'Log, 2023", href: "https://lilianweng.github.io/posts/2023-06-23-agent/" },
+        { title: "AI Agents That Matter", source: "Kapoor et al. · TMLR, 2025", href: "https://arxiv.org/abs/2407.01502" },
+      ],
+    },
+    {
+      n: 2,
+      date: "Sep 28",
+      title: "LLMs for Builders",
+      summary: {
+        en: "Language model internals for agent builders: decoding, attention (linear and hybrid) and context length, pretraining to post-training, test-time scaling, structured output and context engineering.",
+        fr: "Les rouages des modèles de langage pour qui construit des agents : décodage, attention (linéaire et hybride) et longueur de contexte, du pré-entraînement au post-entraînement, test-time scaling, sorties structurées et context engineering.",
+      },
+      slides: "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
+      video: "https://youtu.be/Vr1NzH8bT44",
+      readings: [
+        { title: "Attention Is All You Need", source: "Vaswani et al. · NeurIPS, 2017", href: "https://arxiv.org/abs/1706.03762" },
+        { title: "Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention", source: "Katharopoulos et al. · ICML, 2020", href: "https://arxiv.org/abs/2006.16236" },
+        { title: "Effective Context Engineering for AI Agents", source: "Rajasekaran et al. · Anthropic, 2025", href: "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" },
+      ],
+    },
+    {
+      n: 3,
+      date: "Sep 30",
+      title: "Retrieval-Augmented Generation (RAG)",
+      summary: {
+        en: "The RAG pipeline end to end: chunking and indexing, BM25, DPR and hybrid search, reranking and ColBERT, agentic RAG, and common failure modes.",
+        fr: "Le pipeline RAG de bout en bout : découpage et indexation, BM25, DPR et recherche hybride, reclassement et ColBERT, RAG agentique, et les échecs fréquents.",
+      },
+      slides: "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
+      video: "https://youtu.be/psLc-46GqY0",
+      readings: [
+        { title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", source: "Lewis et al. · NeurIPS, 2020", href: "https://arxiv.org/abs/2005.11401" },
+        { title: "Dense Passage Retrieval for Open-Domain Question Answering", source: "Karpukhin et al. · EMNLP, 2020", href: "https://arxiv.org/abs/2004.04906" },
+        { title: "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT", source: "Khattab & Zaharia · SIGIR, 2020", href: "https://arxiv.org/abs/2004.12832" },
+      ],
+    },
+  ] as CourseClass[],
+};
+
+export const currentCourseClass = () =>
+  learning.classes.find((c) => c.n === learning.currentClass) ?? learning.classes[0];

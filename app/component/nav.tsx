@@ -83,6 +83,7 @@ export function Nav() {
 
   const items = [
     { href: "/projects", label: t("work") },
+    { href: "/learning", label: t("learning") },
     { href: { pathname: "/", hash: "about" }, label: t("about") },
     { href: { pathname: "/", hash: "experience" }, label: t("experience") },
     { href: "#contact", label: t("contact"), raw: true },
@@ -113,7 +114,7 @@ export function Nav() {
                     <Link
                       href={it.href}
                       className={`transition-colors hover:text-paper ${
-                        it.href === "/projects" && pathname.startsWith("/projects") ? "text-paper" : ""
+                        typeof it.href === "string" && it.href.startsWith("/") && pathname.startsWith(it.href) ? "text-paper" : ""
                       }`}
                     >
                       {it.label}
